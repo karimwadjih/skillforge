@@ -1,0 +1,28 @@
+version: 1
+skill:
+  name: Prompt Regression Hunter
+  slug: prompt-regression-hunter
+  category: frontier
+  maturity: frontier
+  description: Use when an updated skill may have improved one area while quietly breaking another.
+  triggers:
+    - A skill or prompt changed and regression checking is needed.
+    - Version comparisons need more than subjective side-by-side reading.
+  expected_inputs:
+    - version A
+    - version B
+    - comparison cases
+    - scoring focus
+  expected_outputs:
+    - regression brief
+    - difference summary
+    - risk cases
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

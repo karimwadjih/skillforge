@@ -1,0 +1,32 @@
+{
+  "slug": "feature-spec-refiner",
+  "category": "product",
+  "maturity": "frontier",
+  "summary": "Tighten a draft spec until scope, state changes, acceptance criteria, and handoff risk are explicit.",
+  "triggers": [
+    "A spec is nearly ready for handoff, but engineers or designers keep finding ambiguity in the details.",
+    "The team has decided to build the feature, yet the document still hides assumptions that will surface during implementation."
+  ],
+  "expected_inputs": [
+    "draft feature spec",
+    "goal or user problem",
+    "constraints and non-goals",
+    "dependencies across teams or systems",
+    "open decisions or unresolved questions"
+  ],
+  "expected_outputs": [
+    "refined spec outline",
+    "scope and assumptions gap list",
+    "testable acceptance criteria",
+    "handoff risks and follow-ups"
+  ],
+  "evaluation_status": "sampled",
+  "tags": [
+    "product",
+    "spec",
+    "refinement"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980" fill="none">
+  <rect width="1600" height="980" fill="#efe7da"/>
+  <rect x="48" y="40" width="1504" height="900" rx="30" fill="#f9f5ee" stroke="#cfbea7"/>
+  <rect x="92" y="76" width="1416" height="72" rx="20" fill="#fffdf8" stroke="#d9cfbf"/>
+  <text x="132" y="120" fill="#7c674c" font-family="ui-sans-serif, system-ui" font-size="14" letter-spacing="3">ILLUSTRATIVE MOCK</text>
+  <text x="132" y="228" fill="#a05724" font-family="ui-sans-serif, system-ui" font-size="15" letter-spacing="4">STUDIO</text>
+  <text x="132" y="312" fill="#0d1624" font-family="Georgia, serif" font-size="60">Browse the library, inspect</text>
+  <text x="132" y="378" fill="#0d1624" font-family="Georgia, serif" font-size="60">the evidence, and compare.</text>
+  <text x="132" y="438" fill="#5f6e7f" font-family="ui-sans-serif, system-ui" font-size="28">Catalog browsing, detail views, compare mode, and starter-skill export.</text>
+  <rect x="132" y="520" width="400" height="314" rx="28" fill="#18314f"/>
+  <text x="168" y="574" fill="#f6f1e8" font-family="Georgia, serif" font-size="30">Catalog Browser</text>
+  <rect x="168" y="606" width="328" height="50" rx="16" fill="#274364"/>
+  <rect x="168" y="674" width="328" height="52" rx="18" fill="#274364"/>
+  <rect x="168" y="740" width="328" height="52" rx="18" fill="#274364"/>
+  <text x="194" y="640" fill="#dce6f2" font-family="ui-sans-serif, system-ui" font-size="22">Search by workflow, trigger, tag</text>
+  <text x="194" y="708" fill="#f6f1e8" font-family="ui-sans-serif, system-ui" font-size="22">Repo Onboarding</text>
+  <text x="194" y="774" fill="#f6f1e8" font-family="ui-sans-serif, system-ui" font-size="22">Research Dossier</text>
+  <rect x="566" y="190" width="882" height="278" rx="30" fill="#fffdf8" stroke="#d9cfbf"/>
+  <text x="606" y="248" fill="#18314f" font-family="Georgia, serif" font-size="36">Compare View</text>
+  <rect x="606" y="280" width="360" height="148" rx="20" fill="#fff8f1" stroke="#ead2bb"/>
+  <rect x="1004" y="280" width="360" height="148" rx="20" fill="#fff8f1" stroke="#ead2bb"/>
+  <text x="632" y="326" fill="#18314f" font-family="ui-sans-serif, system-ui" font-size="24">PRD Critic</text>
+  <text x="632" y="364" fill="#5f6e7f" font-family="ui-sans-serif, system-ui" font-size="20">frontier • flagship • score 93</text>
+  <text x="1030" y="326" fill="#18314f" font-family="ui-sans-serif, system-ui" font-size="24">Feature Spec Refiner</text>
+  <text x="1030" y="364" fill="#5f6e7f" font-family="ui-sans-serif, system-ui" font-size="20">frontier • developed • score 85</text>
+  <rect x="566" y="520" width="428" height="314" rx="28" fill="#fffdf8" stroke="#d9cfbf"/>
+  <rect x="1020" y="520" width="428" height="314" rx="28" fill="#fffdf8" stroke="#d9cfbf"/>
+  <text x="604" y="572" fill="#18314f" font-family="Georgia, serif" font-size="30">Skill Detail</text>
+  <text x="604" y="618" fill="#5f6e7f" font-family="ui-sans-serif, system-ui" font-size="22">Overview, rubric, examples, tests.</text>
+  <text x="1058" y="572" fill="#18314f" font-family="Georgia, serif" font-size="30">Starter Export</text>
+  <text x="1058" y="618" fill="#5f6e7f" font-family="ui-sans-serif, system-ui" font-size="22">ZIP, SKILL.md, skill.json, manifest.</text>
+  <text x="1236" y="121" fill="#18314f" font-family="Georgia, serif" font-size="34">Skillforge</text>
+</svg>

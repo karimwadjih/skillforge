@@ -1,0 +1,28 @@
+version: 1
+skill:
+  name: Vendor Evaluation Memo
+  slug: vendor-evaluation-memo
+  category: ops
+  maturity: experimental
+  description: Use when a team needs a vendor memo instead of a loosely organized buying discussion.
+  triggers:
+    - A vendor choice needs a structured evaluation memo.
+    - Stakeholders need an explicit record of vendor tradeoffs.
+  expected_inputs:
+    - vendor options
+    - requirements
+    - constraints
+    - risks
+  expected_outputs:
+    - evaluation memo
+    - criteria comparison
+    - recommendation
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

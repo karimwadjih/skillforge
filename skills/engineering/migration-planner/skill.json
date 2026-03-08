@@ -1,0 +1,31 @@
+{
+  "slug": "migration-planner",
+  "category": "engineering",
+  "maturity": "frontier",
+  "summary": "Plan a code, data, or platform migration with dependencies, sequence, and rollback considerations.",
+  "triggers": [
+    "A system, library, or data migration needs a staged plan.",
+    "The migration risk is high enough that sequencing must be explicit."
+  ],
+  "expected_inputs": [
+    "migration target",
+    "current state",
+    "constraints",
+    "dependencies"
+  ],
+  "expected_outputs": [
+    "migration plan",
+    "dependency map",
+    "risk list",
+    "rollback notes"
+  ],
+  "evaluation_status": "sampled",
+  "tags": [
+    "engineering",
+    "migration",
+    "planning"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

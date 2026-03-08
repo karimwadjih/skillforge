@@ -1,0 +1,29 @@
+version: 1
+skill:
+  name: PRD Critic
+  slug: prd-critic
+  category: product
+  maturity: frontier
+  description: Use when a PRD exists but needs a serious review before engineering, design, or leadership align around it.
+  triggers:
+    - A PRD is drafted and needs rigorous critique before commitment.
+    - The team suspects a requirements doc is vague, bloated, or risky.
+  expected_inputs:
+    - product requirements document
+    - strategy context
+    - constraints
+    - target audience
+  expected_outputs:
+    - critique summary
+    - gap list
+    - risk list
+    - revision recommendations
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

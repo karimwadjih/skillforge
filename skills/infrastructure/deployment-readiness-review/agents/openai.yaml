@@ -1,0 +1,30 @@
+version: 1
+skill:
+  name: Deployment Readiness Review
+  slug: deployment-readiness-review
+  category: infrastructure
+  maturity: frontier
+  description: Use when a release needs a disciplined readiness review, not a ceremonial checklist pass.
+  triggers:
+    - A service or feature is approaching release and the team needs a real go or no-go read instead of optimism.
+    - The launch path depends on rollout controls, monitoring, rollback posture, or operational coordination that could still fail.
+  expected_inputs:
+    - release or change summary
+    - dependencies and rollout plan
+    - monitoring and alerting posture
+    - rollback or containment options
+    - known risks or unresolved checks
+  expected_outputs:
+    - deployment readiness review
+    - go or no-go risk summary
+    - rollout notes
+    - monitoring and rollback gaps
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

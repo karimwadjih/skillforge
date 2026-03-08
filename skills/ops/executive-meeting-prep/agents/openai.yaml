@@ -1,0 +1,29 @@
+version: 1
+skill:
+  name: Executive Meeting Prep
+  slug: executive-meeting-prep
+  category: ops
+  maturity: frontier
+  description: Use when an executive meeting needs strong prep instead of disconnected slide fragments.
+  triggers:
+    - An executive meeting needs a concise prep brief.
+    - The team needs to anticipate decisions, risks, and likely questions.
+  expected_inputs:
+    - agenda
+    - supporting notes
+    - participants
+    - known tensions
+  expected_outputs:
+    - meeting prep brief
+    - decision list
+    - risk notes
+    - question prep
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

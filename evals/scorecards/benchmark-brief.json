@@ -1,0 +1,24 @@
+{
+  "slug": "benchmark-brief",
+  "category": "research",
+  "maturity": "frontier",
+  "tier": "flagship",
+  "total": 100,
+  "breakdown": {
+    "structure": 30,
+    "metadata": 20,
+    "content": 25,
+    "rubric": 10,
+    "tests": 15
+  },
+  "counts": {
+    "examples": 3,
+    "edgeCases": 3,
+    "tests": 6,
+    "rubricCriteria": 3,
+    "benchmarkAssets": 2
+  },
+  "benchmarkCovered": true,
+  "certificationEligible": false,
+  "recommendations": []
+}

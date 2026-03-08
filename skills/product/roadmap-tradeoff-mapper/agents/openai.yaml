@@ -1,0 +1,30 @@
+version: 1
+skill:
+  name: Roadmap Tradeoff Mapper
+  slug: roadmap-tradeoff-mapper
+  category: product
+  maturity: frontier
+  description: Use when prioritization needs explicit cost-of-choice logic instead of another scoring debate.
+  triggers:
+    - Two or more roadmap bets are competing for the same quarter and every argument sounds plausible in isolation.
+    - Stakeholders keep ranking ideas without showing what each choice delays, blocks, or makes harder later.
+  expected_inputs:
+    - candidate roadmap options
+    - business or product goals
+    - constraints and capacity assumptions
+    - dependencies and timing risks
+    - known evidence for each option
+  expected_outputs:
+    - tradeoff map
+    - option-by-option comparison
+    - recommended sequence or cut line
+    - open evidence gaps
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

@@ -1,0 +1,22 @@
+{
+  "slug": "new-skill",
+  "category": "research",
+  "maturity": "scaffold",
+  "summary": "One-sentence summary of the repeated workflow.",
+  "triggers": [
+    "A precise trigger for when the skill should be used."
+  ],
+  "expected_inputs": [
+    "What the user or system should provide."
+  ],
+  "expected_outputs": [
+    "What the skill should produce."
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "starter"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

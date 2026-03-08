@@ -1,0 +1,27 @@
+version: 1
+skill:
+  name: Test Plan Designer
+  slug: test-plan-designer
+  category: engineering
+  maturity: experimental
+  description: Use when a team needs a test plan that covers happy paths, edge cases, and failure conditions explicitly.
+  triggers:
+    - A meaningful change needs a structured test plan.
+    - Teams need to define test scope before implementation or rollout.
+  expected_inputs:
+    - change description
+    - risk areas
+    - critical paths
+  expected_outputs:
+    - test plan
+    - coverage map
+    - edge-case list
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

@@ -1,0 +1,29 @@
+version: 1
+skill:
+  name: Skill Eval Builder
+  slug: skill-eval-builder
+  category: frontier
+  maturity: frontier
+  description: Use when a skill is useful enough to deserve an evaluation plan instead of ad hoc spot checks.
+  triggers:
+    - A skill needs evaluation scaffolding.
+    - A team wants prompts, score dimensions, and failure probes for a workflow skill.
+  expected_inputs:
+    - skill description
+    - expected behavior
+    - failure concerns
+    - output contract
+  expected_outputs:
+    - eval plan
+    - test prompts
+    - score dimensions
+    - failure probes
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

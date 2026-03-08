@@ -1,0 +1,29 @@
+version: 1
+skill:
+  name: Weekly Ops Update
+  slug: weekly-ops-update
+  category: ops
+  maturity: frontier
+  description: Use when a recurring ops update needs to be concise, repeatable, and decision-useful for leaders.
+  triggers:
+    - A weekly operating update needs to be synthesized from many small inputs.
+    - Leaders need the signal from operations without reading every source document.
+  expected_inputs:
+    - weekly operational notes
+    - metrics
+    - issues
+    - cross-functional updates
+  expected_outputs:
+    - weekly ops update
+    - key changes
+    - risks
+    - follow-up items
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

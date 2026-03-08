@@ -1,0 +1,33 @@
+{
+  "slug": "research-dossier",
+  "category": "research",
+  "maturity": "certified",
+  "summary": "Turn scattered research inputs into a decision-ready dossier with evidence, themes, and unresolved questions.",
+  "triggers": [
+    "You need to brief a team on a topic that spans many sources or interviews.",
+    "Raw research notes are piling up and decisions are getting delayed."
+  ],
+  "expected_inputs": [
+    "source documents or links",
+    "research questions",
+    "decision context",
+    "known constraints"
+  ],
+  "expected_outputs": [
+    "dossier summary",
+    "evidence-backed findings",
+    "risks and open questions",
+    "recommended next actions"
+  ],
+  "evaluation_status": "benchmarked",
+  "tags": [
+    "research",
+    "analysis",
+    "synthesis",
+    "flagship"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ],
+  "manual_review": "passed"
+}

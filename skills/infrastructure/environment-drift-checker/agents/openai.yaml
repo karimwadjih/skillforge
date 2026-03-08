@@ -1,0 +1,27 @@
+version: 1
+skill:
+  name: Environment Drift Checker
+  slug: environment-drift-checker
+  category: infrastructure
+  maturity: experimental
+  description: Use when environments may have drifted and a team needs a review artifact before acting.
+  triggers:
+    - A team suspects environment drift.
+    - Operators need a structured summary of differences across environments.
+  expected_inputs:
+    - environment configs
+    - expected baseline
+    - known incidents
+  expected_outputs:
+    - drift summary
+    - difference list
+    - verification priorities
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

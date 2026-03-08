@@ -1,0 +1,29 @@
+{
+  "slug": "infra-change-explainer",
+  "category": "infrastructure",
+  "maturity": "experimental",
+  "summary": "Explain an infrastructure change in plain language for operators or adjacent teams.",
+  "triggers": [
+    "An infrastructure change needs a readable explanation.",
+    "Adjacent teams need to understand an infra change and its impact."
+  ],
+  "expected_inputs": [
+    "change description",
+    "affected systems",
+    "audience"
+  ],
+  "expected_outputs": [
+    "change explainer",
+    "impact summary",
+    "risk notes"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "infrastructure",
+    "changes",
+    "communication"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "source-credibility-audit",
+  "category": "research",
+  "maturity": "experimental",
+  "summary": "Audit a set of sources for credibility, bias, recency, and usefulness.",
+  "triggers": [
+    "The research set includes sources with mixed credibility.",
+    "A team needs to know which inputs are strong enough to rely on."
+  ],
+  "expected_inputs": [
+    "source list",
+    "decision context",
+    "quality concerns"
+  ],
+  "expected_outputs": [
+    "credibility audit",
+    "source tiers",
+    "usage notes"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "research",
+    "sources",
+    "credibility"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

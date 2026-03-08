@@ -1,0 +1,30 @@
+{
+  "slug": "product-risk-register",
+  "category": "product",
+  "maturity": "scaffold",
+  "summary": "Create a product risk register for an initiative before the team commits fully.",
+  "triggers": [
+    "A product initiative is moving forward without a clear risk register.",
+    "Leaders want a structured view of product risks before approval."
+  ],
+  "expected_inputs": [
+    "initiative scope",
+    "timeline",
+    "dependencies",
+    "known concerns"
+  ],
+  "expected_outputs": [
+    "risk register",
+    "severity view",
+    "mitigation notes"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "product",
+    "risk",
+    "planning"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

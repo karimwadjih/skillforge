@@ -1,0 +1,51 @@
+{
+  "slug": "workflow-compiler",
+  "maturity": "frontier",
+  "prompts": [
+    {
+      "id": "workflow-compiler-prompt-1",
+      "title": "Existing workflow under pressure",
+      "prompt": "Use Workflow Compiler to produce a compiled workflow package with step sequence, contracts, edge handling, and starter evaluation prompts for the current workstream.",
+      "minimum_expectations": [
+        "State the workflow objective in plain language.",
+        "Produce a compiled workflow package with step sequence, contracts, edge handling, and starter evaluation prompts with explicit structure.",
+        "Call out missing information and the next decision."
+      ],
+      "rubric_dimensions": [
+        "Operational realism",
+        "System mapping",
+        "Readiness"
+      ]
+    },
+    {
+      "id": "workflow-compiler-prompt-2",
+      "title": "Partial inputs",
+      "prompt": "Draft the strongest version of a compiled workflow package with step sequence, contracts, edge handling, and starter evaluation prompts using only the available inputs and list what is missing.",
+      "minimum_expectations": [
+        "Separate knowns from assumptions.",
+        "Prioritize the most decision-relevant gaps.",
+        "Keep the output usable even when some inputs are missing."
+      ],
+      "rubric_dimensions": [
+        "Operational realism",
+        "System mapping",
+        "Readiness"
+      ]
+    },
+    {
+      "id": "workflow-compiler-prompt-3",
+      "title": "Decision review",
+      "prompt": "Summarize the output from Workflow Compiler for an operator or leader who needs the decision-ready version.",
+      "minimum_expectations": [
+        "Highlight the recommendation or key conclusion.",
+        "Show risks or tradeoffs.",
+        "End with concrete next actions."
+      ],
+      "rubric_dimensions": [
+        "Operational realism",
+        "System mapping",
+        "Readiness"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+version: 1
+skill:
+  name: Changelog Composer
+  slug: changelog-composer
+  category: docs
+  maturity: experimental
+  description: Use when raw change inputs need to become a readable changelog for users or contributors.
+  triggers:
+    - Release changes need a human-readable changelog.
+    - Teams need a changelog draft from commits or PR summaries.
+  expected_inputs:
+    - change list
+    - audience
+    - version context
+  expected_outputs:
+    - changelog draft
+    - highlights
+    - upgrade notes
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

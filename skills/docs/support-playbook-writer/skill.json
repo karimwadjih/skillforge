@@ -1,0 +1,29 @@
+{
+  "slug": "support-playbook-writer",
+  "category": "docs",
+  "maturity": "experimental",
+  "summary": "Write a support playbook for recurring issue types and escalation routes.",
+  "triggers": [
+    "Support handling is inconsistent for a recurring issue type.",
+    "A support playbook needs to be drafted from scattered procedures."
+  ],
+  "expected_inputs": [
+    "issue types",
+    "resolution notes",
+    "escalation rules"
+  ],
+  "expected_outputs": [
+    "support playbook",
+    "handling guidance",
+    "escalation map"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "docs",
+    "support",
+    "playbook"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

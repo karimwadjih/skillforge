@@ -1,0 +1,30 @@
+version: 1
+skill:
+  name: Bug Triage
+  slug: bug-triage
+  category: engineering
+  maturity: frontier
+  description: Use when a bug report is real enough to act on but still too messy for a team to prioritize confidently.
+  triggers:
+    - An incoming bug report needs structured triage.
+    - The team needs severity, repro confidence, and follow-up decisions captured quickly.
+  expected_inputs:
+    - bug report
+    - logs or screenshots if available
+    - affected area
+    - user impact context
+  expected_outputs:
+    - triage summary
+    - severity recommendation
+    - repro notes
+    - owner suggestions
+    - next actions
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

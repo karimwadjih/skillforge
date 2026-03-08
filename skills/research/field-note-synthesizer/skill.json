@@ -1,0 +1,29 @@
+{
+  "slug": "field-note-synthesizer",
+  "category": "research",
+  "maturity": "experimental",
+  "summary": "Turn raw field notes into themes, anomalies, and follow-up questions.",
+  "triggers": [
+    "A team gathered observational notes and needs a reliable synthesis.",
+    "Field notes contain patterns that are easy to miss in raw form."
+  ],
+  "expected_inputs": [
+    "field notes",
+    "observation goal",
+    "known constraints"
+  ],
+  "expected_outputs": [
+    "theme summary",
+    "anomalies",
+    "follow-up questions"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "research",
+    "fieldwork",
+    "synthesis"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

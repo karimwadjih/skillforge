@@ -1,0 +1,29 @@
+version: 1
+skill:
+  name: Architecture Explainer
+  slug: architecture-explainer
+  category: engineering
+  maturity: frontier
+  description: Use when someone needs a reliable architectural explanation rather than a folder-by-folder description.
+  triggers:
+    - A system needs to be explained to new contributors or adjacent teams.
+    - Architecture details exist in code but not in a digestible narrative.
+  expected_inputs:
+    - codebase or architecture artifacts
+    - audience
+    - system boundaries
+    - known pain points
+  expected_outputs:
+    - architecture overview
+    - component map
+    - data or control flow summary
+    - key tradeoffs
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

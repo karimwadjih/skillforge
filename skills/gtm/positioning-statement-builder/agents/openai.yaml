@@ -1,0 +1,28 @@
+version: 1
+skill:
+  name: Positioning Statement Builder
+  slug: positioning-statement-builder
+  category: gtm
+  maturity: frontier
+  description: Use when a product or feature needs sharper positioning before launch or campaign work.
+  triggers:
+    - A product or feature needs clearer positioning.
+    - Messaging is drifting because the core value statement is not locked.
+  expected_inputs:
+    - audience
+    - problem
+    - product value
+    - alternatives
+  expected_outputs:
+    - positioning statement
+    - supporting proof points
+    - message guardrails
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

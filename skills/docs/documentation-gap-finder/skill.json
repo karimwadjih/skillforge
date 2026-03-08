@@ -1,0 +1,29 @@
+{
+  "slug": "documentation-gap-finder",
+  "category": "docs",
+  "maturity": "frontier",
+  "summary": "Find the most important gaps in a documentation surface and explain what is missing for real users.",
+  "triggers": [
+    "A documentation area needs a gap audit.",
+    "Teams want to know which missing docs matter most to users or contributors."
+  ],
+  "expected_inputs": [
+    "doc set",
+    "user type",
+    "product or workflow context"
+  ],
+  "expected_outputs": [
+    "gap audit",
+    "priority list",
+    "recommended doc additions"
+  ],
+  "evaluation_status": "sampled",
+  "tags": [
+    "docs",
+    "audit",
+    "quality"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

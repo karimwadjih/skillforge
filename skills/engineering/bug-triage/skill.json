@@ -1,0 +1,33 @@
+{
+  "slug": "bug-triage",
+  "category": "engineering",
+  "maturity": "frontier",
+  "summary": "Turn a raw bug report into a triage artifact with severity, repro confidence, likely owners, and next actions.",
+  "triggers": [
+    "An incoming bug report needs structured triage.",
+    "The team needs severity, repro confidence, and follow-up decisions captured quickly."
+  ],
+  "expected_inputs": [
+    "bug report",
+    "logs or screenshots if available",
+    "affected area",
+    "user impact context"
+  ],
+  "expected_outputs": [
+    "triage summary",
+    "severity recommendation",
+    "repro notes",
+    "owner suggestions",
+    "next actions"
+  ],
+  "evaluation_status": "benchmarked",
+  "tags": [
+    "engineering",
+    "bugs",
+    "triage",
+    "flagship"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

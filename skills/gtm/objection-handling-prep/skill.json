@@ -1,0 +1,30 @@
+{
+  "slug": "objection-handling-prep",
+  "category": "gtm",
+  "maturity": "experimental",
+  "summary": "Prepare objection handling guidance for sales, partnerships, or launch support teams.",
+  "triggers": [
+    "A go-to-market team wants a better objection handling asset.",
+    "Repeated buyer or partner objections need structured prep."
+  ],
+  "expected_inputs": [
+    "objection list",
+    "product context",
+    "proof points",
+    "known constraints"
+  ],
+  "expected_outputs": [
+    "objection guide",
+    "response options",
+    "evidence notes"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "gtm",
+    "sales",
+    "enablement"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

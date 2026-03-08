@@ -1,0 +1,51 @@
+{
+  "slug": "executive-meeting-prep",
+  "maturity": "frontier",
+  "prompts": [
+    {
+      "id": "executive-meeting-prep-prompt-1",
+      "title": "Existing workflow under pressure",
+      "prompt": "Use Executive Meeting Prep to produce an executive meeting brief with objectives, decision points, supporting context, risks, and anticipated questions for the current workstream.",
+      "minimum_expectations": [
+        "State the workflow objective in plain language.",
+        "Produce an executive meeting brief with objectives, decision points, supporting context, risks, and anticipated questions with explicit structure.",
+        "Call out missing information and the next decision."
+      ],
+      "rubric_dimensions": [
+        "Signal clarity",
+        "Cadence readiness",
+        "Executive usefulness"
+      ]
+    },
+    {
+      "id": "executive-meeting-prep-prompt-2",
+      "title": "Partial inputs",
+      "prompt": "Draft the strongest version of an executive meeting brief with objectives, decision points, supporting context, risks, and anticipated questions using only the available inputs and list what is missing.",
+      "minimum_expectations": [
+        "Separate knowns from assumptions.",
+        "Prioritize the most decision-relevant gaps.",
+        "Keep the output usable even when some inputs are missing."
+      ],
+      "rubric_dimensions": [
+        "Signal clarity",
+        "Cadence readiness",
+        "Executive usefulness"
+      ]
+    },
+    {
+      "id": "executive-meeting-prep-prompt-3",
+      "title": "Decision review",
+      "prompt": "Summarize the output from Executive Meeting Prep for an operator or leader who needs the decision-ready version.",
+      "minimum_expectations": [
+        "Highlight the recommendation or key conclusion.",
+        "Show risks or tradeoffs.",
+        "End with concrete next actions."
+      ],
+      "rubric_dimensions": [
+        "Signal clarity",
+        "Cadence readiness",
+        "Executive usefulness"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "prd-critic",
+  "maturity": "frontier",
+  "prompts": [
+    {
+      "id": "prd-critic-prompt-1",
+      "title": "Bloated scope review",
+      "prompt": "Review this PRD for scope bloat, hidden assumptions, and readiness for implementation.",
+      "minimum_expectations": [
+        "Identify where the document mixes separate bets.",
+        "Show which requirements are vague or untestable.",
+        "Recommend the highest-leverage revisions."
+      ],
+      "rubric_dimensions": [
+        "Problem framing",
+        "Tradeoff rigor",
+        "Execution readiness"
+      ]
+    },
+    {
+      "id": "prd-critic-prompt-2",
+      "title": "Leadership alignment",
+      "prompt": "Critique the PRD with a focus on decision quality, tradeoffs, and risk communication.",
+      "minimum_expectations": [
+        "Separate product logic from presentation polish.",
+        "Highlight decisions leadership still needs to make.",
+        "Explain what evidence is missing."
+      ],
+      "rubric_dimensions": [
+        "Problem framing",
+        "Tradeoff rigor",
+        "Execution readiness"
+      ]
+    },
+    {
+      "id": "prd-critic-prompt-3",
+      "title": "Cross-functional handoff",
+      "prompt": "Analyze the PRD for handoff risk, unresolved dependencies, and missing success criteria.",
+      "minimum_expectations": [
+        "Call out ambiguous requirements.",
+        "Identify dependencies and missing stakeholders.",
+        "End with a revision sequence the PM should tackle first."
+      ],
+      "rubric_dimensions": [
+        "Problem framing",
+        "Tradeoff rigor",
+        "Execution readiness"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+version: 1
+skill:
+  name: Persona Refresh
+  slug: persona-refresh
+  category: gtm
+  maturity: scaffold
+  description: Use when existing personas feel stale and teams need a cleaner working version.
+  triggers:
+    - Existing personas are out of date.
+    - Recent research or sales signals should update audience understanding.
+  expected_inputs:
+    - current persona
+    - new evidence
+    - strategy context
+  expected_outputs:
+    - refreshed persona
+    - changes summary
+    - open questions
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

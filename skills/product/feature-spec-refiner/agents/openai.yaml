@@ -1,0 +1,30 @@
+version: 1
+skill:
+  name: Feature Spec Refiner
+  slug: feature-spec-refiner
+  category: product
+  maturity: frontier
+  description: Use when a spec looks close to done but is still too loose to hand to design or engineering safely.
+  triggers:
+    - A spec is nearly ready for handoff, but engineers or designers keep finding ambiguity in the details.
+    - The team has decided to build the feature, yet the document still hides assumptions that will surface during implementation.
+  expected_inputs:
+    - draft feature spec
+    - goal or user problem
+    - constraints and non-goals
+    - dependencies across teams or systems
+    - open decisions or unresolved questions
+  expected_outputs:
+    - refined spec outline
+    - scope and assumptions gap list
+    - testable acceptance criteria
+    - handoff risks and follow-ups
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

@@ -1,0 +1,30 @@
+version: 1
+skill:
+  name: Launch Plan Generator
+  slug: launch-plan-generator
+  category: gtm
+  maturity: frontier
+  description: Use when a launch needs a real operating plan instead of a list of hopeful tasks.
+  triggers:
+    - A launch needs a coordinated GTM plan across functions.
+    - A team needs a launch artifact with sequencing, dependencies, and readiness logic.
+  expected_inputs:
+    - launch objective
+    - audience
+    - timeline
+    - channels
+    - constraints
+  expected_outputs:
+    - launch plan
+    - owner map
+    - dependency list
+    - readiness checkpoints
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

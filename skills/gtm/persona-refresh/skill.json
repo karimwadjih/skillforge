@@ -1,0 +1,29 @@
+{
+  "slug": "persona-refresh",
+  "category": "gtm",
+  "maturity": "scaffold",
+  "summary": "Refresh a persona artifact using newer research, pipeline signals, or product context.",
+  "triggers": [
+    "Existing personas are out of date.",
+    "Recent research or sales signals should update audience understanding."
+  ],
+  "expected_inputs": [
+    "current persona",
+    "new evidence",
+    "strategy context"
+  ],
+  "expected_outputs": [
+    "refreshed persona",
+    "changes summary",
+    "open questions"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "gtm",
+    "personas",
+    "audience"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

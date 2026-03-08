@@ -1,0 +1,28 @@
+version: 1
+skill:
+  name: Capacity Planning Brief
+  slug: capacity-planning-brief
+  category: infrastructure
+  maturity: scaffold
+  description: Use when capacity concerns need a structured brief rather than isolated metric screenshots.
+  triggers:
+    - Capacity questions need a more organized planning artifact.
+    - Leaders want a summary of capacity risk and timing.
+  expected_inputs:
+    - usage patterns
+    - constraints
+    - growth assumptions
+    - current limits
+  expected_outputs:
+    - capacity brief
+    - risk summary
+    - planning recommendations
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

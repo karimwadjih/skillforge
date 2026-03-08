@@ -1,0 +1,31 @@
+{
+  "slug": "literature-map",
+  "category": "research",
+  "maturity": "frontier",
+  "summary": "Map a crowded topic into schools of thought, evidence weight, and the shortest smart reading path.",
+  "triggers": [
+    "You need a fast orientation before a team spends a week reading the wrong sources.",
+    "The literature is large, repetitive, or internally contested and you need the debate structure first."
+  ],
+  "expected_inputs": [
+    "framing question or decision the reading should support",
+    "seed bibliography, search results, or must-read source set",
+    "time window or domain boundary",
+    "constraints on depth, rigor, or turnaround time"
+  ],
+  "expected_outputs": [
+    "literature landscape map",
+    "theme clusters and fault lines",
+    "evidence-strength notes",
+    "recommended reading path"
+  ],
+  "evaluation_status": "sampled",
+  "tags": [
+    "research",
+    "literature",
+    "mapping"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

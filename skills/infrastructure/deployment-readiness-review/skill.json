@@ -1,0 +1,32 @@
+{
+  "slug": "deployment-readiness-review",
+  "category": "infrastructure",
+  "maturity": "frontier",
+  "summary": "Review whether a release is actually ready to roll out, observe, and reverse if needed.",
+  "triggers": [
+    "A service or feature is approaching release and the team needs a real go or no-go read instead of optimism.",
+    "The launch path depends on rollout controls, monitoring, rollback posture, or operational coordination that could still fail."
+  ],
+  "expected_inputs": [
+    "release or change summary",
+    "dependencies and rollout plan",
+    "monitoring and alerting posture",
+    "rollback or containment options",
+    "known risks or unresolved checks"
+  ],
+  "expected_outputs": [
+    "deployment readiness review",
+    "go or no-go risk summary",
+    "rollout notes",
+    "monitoring and rollback gaps"
+  ],
+  "evaluation_status": "sampled",
+  "tags": [
+    "infrastructure",
+    "deployments",
+    "review"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

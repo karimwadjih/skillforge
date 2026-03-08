@@ -1,0 +1,33 @@
+{
+  "slug": "benchmark-brief",
+  "category": "research",
+  "maturity": "frontier",
+  "summary": "Create a concise benchmark brief that explains what is being measured, how it is scored, and how to interpret the results.",
+  "triggers": [
+    "You need to design or explain an evaluation benchmark for an agent workflow.",
+    "Stakeholders are asking for benchmark results without understanding what the numbers mean."
+  ],
+  "expected_inputs": [
+    "benchmark goal",
+    "cases or prompts",
+    "scoring dimensions",
+    "known limitations"
+  ],
+  "expected_outputs": [
+    "benchmark brief",
+    "measurement summary",
+    "interpretation notes",
+    "follow-up recommendations"
+  ],
+  "evaluation_status": "benchmarked",
+  "tags": [
+    "research",
+    "benchmarking",
+    "evaluation",
+    "flagship"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ],
+  "manual_review": "pending"
+}

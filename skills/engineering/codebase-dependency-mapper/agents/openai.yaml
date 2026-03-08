@@ -1,0 +1,27 @@
+version: 1
+skill:
+  name: Codebase Dependency Mapper
+  slug: codebase-dependency-mapper
+  category: engineering
+  maturity: scaffold
+  description: Use when a repository's internal and external dependencies need to be explained for planning or onboarding.
+  triggers:
+    - A team needs a dependency map for a codebase.
+    - Dependency complexity is making change planning harder.
+  expected_inputs:
+    - repository structure
+    - dependency manifests
+    - service boundaries
+  expected_outputs:
+    - dependency map
+    - risk notes
+    - change hotspots
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

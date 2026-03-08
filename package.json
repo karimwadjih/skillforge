@@ -1,0 +1,35 @@
+{
+  "name": "skillforge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Production-grade Skills for ChatGPT and Codex.",
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "build": "pnpm skills:generate && pnpm score && pnpm catalog:generate && turbo run build",
+    "test": "vitest run",
+    "validate": "pnpm --filter @skillforge/validator cli",
+    "score": "pnpm --filter @skillforge/scorer cli",
+    "catalog:generate": "pnpm --filter @skillforge/indexer cli",
+    "seeds:refresh": "node --experimental-strip-types scripts/bootstrap-seeds.ts",
+    "skills:generate": "node --experimental-strip-types scripts/generate-library.ts",
+    "package:flagships": "pnpm --filter @skillforge/packager cli --skills flagships",
+    "package:collections": "pnpm --filter @skillforge/packager cli --collections all",
+    "benchmark:run": "node --experimental-strip-types scripts/run-benchmarks.ts",
+    "dev:docs": "pnpm --filter skillforge-docs dev",
+    "dev:studio": "pnpm --filter skillforge-studio dev",
+    "lint": "pnpm validate && pnpm test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tsx": "^4.19.0",
+    "turbo": "^2.4.4",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
+  }
+}

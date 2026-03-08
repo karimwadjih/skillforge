@@ -1,0 +1,27 @@
+version: 1
+skill:
+  name: Infra Change Explainer
+  slug: infra-change-explainer
+  category: infrastructure
+  maturity: experimental
+  description: Use when infra work needs a clearer explanation than a raw diff or ticket provides.
+  triggers:
+    - An infrastructure change needs a readable explanation.
+    - Adjacent teams need to understand an infra change and its impact.
+  expected_inputs:
+    - change description
+    - affected systems
+    - audience
+  expected_outputs:
+    - change explainer
+    - impact summary
+    - risk notes
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

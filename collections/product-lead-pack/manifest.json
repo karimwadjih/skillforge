@@ -1,0 +1,23 @@
+{
+  "slug": "product-lead-pack",
+  "name": "Product Lead Pack",
+  "summary": "A working set for product leads moving from raw inputs to tighter specs, cleaner tradeoffs, and better decisions.",
+  "audience": "Product leads and principal product managers",
+  "included_skills": [
+    "prd-critic",
+    "customer-interview-synthesizer",
+    "roadmap-tradeoff-mapper",
+    "feature-spec-refiner",
+    "benchmark-brief",
+    "research-dossier"
+  ],
+  "use_cases": [
+    "Turn research into roadmap choices",
+    "Sharpen PRDs and implementation handoffs",
+    "Compare competing bets before quarter commitments"
+  ],
+  "quick_start": [
+    "Start with the skill closest to the current artifact you already have.",
+    "Use the output as input to the next product planning step."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "bug-triage",
+  "maturity": "frontier",
+  "prompts": [
+    {
+      "id": "bug-triage-prompt-1",
+      "title": "Noisy user report",
+      "prompt": "Triage this incoming bug report and identify severity, missing reproduction details, and likely owners.",
+      "minimum_expectations": [
+        "Separate observed symptoms from guesses.",
+        "State the current repro confidence.",
+        "Recommend the next fastest move for the engineering team."
+      ],
+      "rubric_dimensions": [
+        "Technical accuracy",
+        "Actionability",
+        "Change awareness"
+      ]
+    },
+    {
+      "id": "bug-triage-prompt-2",
+      "title": "Regression candidate",
+      "prompt": "Create a triage brief for a likely regression affecting a recently changed area.",
+      "minimum_expectations": [
+        "Call out likely regression evidence.",
+        "Identify the likely area and the verification path.",
+        "Mention rollback or containment considerations if relevant."
+      ],
+      "rubric_dimensions": [
+        "Technical accuracy",
+        "Actionability",
+        "Change awareness"
+      ]
+    },
+    {
+      "id": "bug-triage-prompt-3",
+      "title": "Prioritization queue",
+      "prompt": "Convert this bug report into a planning-ready triage summary with severity logic and scope of impact.",
+      "minimum_expectations": [
+        "Explain severity with user impact and blast radius.",
+        "Distinguish urgency from importance.",
+        "End with a recommended routing decision."
+      ],
+      "rubric_dimensions": [
+        "Technical accuracy",
+        "Actionability",
+        "Change awareness"
+      ]
+    }
+  ]
+}

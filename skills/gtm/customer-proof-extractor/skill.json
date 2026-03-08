@@ -1,0 +1,29 @@
+{
+  "slug": "customer-proof-extractor",
+  "category": "gtm",
+  "maturity": "experimental",
+  "summary": "Extract credible customer proof points from interviews, calls, or success stories.",
+  "triggers": [
+    "The team needs customer proof for messaging or sales enablement.",
+    "Evidence exists in raw materials but not in reusable form."
+  ],
+  "expected_inputs": [
+    "calls or interviews",
+    "customer stories",
+    "target use cases"
+  ],
+  "expected_outputs": [
+    "proof point set",
+    "quote candidates",
+    "usage notes"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "gtm",
+    "proof",
+    "customers"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

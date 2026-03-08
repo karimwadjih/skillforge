@@ -1,0 +1,29 @@
+{
+  "slug": "environment-drift-checker",
+  "category": "infrastructure",
+  "maturity": "experimental",
+  "summary": "Check for environment drift and summarize what changed, why it matters, and where to verify.",
+  "triggers": [
+    "A team suspects environment drift.",
+    "Operators need a structured summary of differences across environments."
+  ],
+  "expected_inputs": [
+    "environment configs",
+    "expected baseline",
+    "known incidents"
+  ],
+  "expected_outputs": [
+    "drift summary",
+    "difference list",
+    "verification priorities"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "infrastructure",
+    "environment",
+    "drift"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

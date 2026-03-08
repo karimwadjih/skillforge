@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "ES2023",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@skillforge/shared": [
+        "packages/shared/src/index.ts"
+      ],
+      "@skillforge/catalog": [
+        "packages/catalog/src/index.ts"
+      ],
+      "@skillforge/ui": [
+        "packages/ui/src/index.tsx"
+      ],
+      "@skillforge/validator": [
+        "packages/validator/src/index.ts"
+      ],
+      "@skillforge/scorer": [
+        "packages/scorer/src/index.ts"
+      ],
+      "@skillforge/packager": [
+        "packages/packager/src/index.ts"
+      ],
+      "@skillforge/indexer": [
+        "packages/indexer/src/index.ts"
+      ]
+    }
+  }
+}

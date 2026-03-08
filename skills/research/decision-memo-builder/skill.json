@@ -1,0 +1,30 @@
+{
+  "slug": "decision-memo-builder",
+  "category": "research",
+  "maturity": "scaffold",
+  "summary": "Shape research and context into a decision memo with options and recommendations.",
+  "triggers": [
+    "You need to turn research into a decision memo.",
+    "Stakeholders need options, tradeoffs, and a recommendation in one place."
+  ],
+  "expected_inputs": [
+    "background",
+    "decision statement",
+    "evidence",
+    "options"
+  ],
+  "expected_outputs": [
+    "decision memo",
+    "option comparison",
+    "recommendation"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "research",
+    "memo",
+    "decision"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

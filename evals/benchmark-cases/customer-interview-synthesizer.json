@@ -1,0 +1,51 @@
+{
+  "slug": "customer-interview-synthesizer",
+  "maturity": "frontier",
+  "prompts": [
+    {
+      "id": "customer-interview-synthesizer-prompt-1",
+      "title": "Pattern extraction across segments",
+      "prompt": "Synthesize these customer interviews into a segment-aware artifact with themes, contradictions, and product implications.",
+      "minimum_expectations": [
+        "Avoid collapsing the segments into one generic voice.",
+        "Show where signals are strong and where they are tentative.",
+        "Translate the synthesis into concrete product implications."
+      ],
+      "rubric_dimensions": [
+        "Problem framing",
+        "Tradeoff rigor",
+        "Execution readiness"
+      ]
+    },
+    {
+      "id": "customer-interview-synthesizer-prompt-2",
+      "title": "Roadmap input",
+      "prompt": "Turn this interview set into a roadmap-facing synthesis that distinguishes opportunity, friction, and noise.",
+      "minimum_expectations": [
+        "Separate tactical complaints from strategic opportunities.",
+        "Keep evidence traceable to interviews.",
+        "End with recommendations that a PM can discuss with leadership."
+      ],
+      "rubric_dimensions": [
+        "Problem framing",
+        "Tradeoff rigor",
+        "Execution readiness"
+      ]
+    },
+    {
+      "id": "customer-interview-synthesizer-prompt-3",
+      "title": "Executive readout",
+      "prompt": "Create an executive-ready customer interview synthesis with a short headline section and a deeper evidence section.",
+      "minimum_expectations": [
+        "Lead with the most material customer insight.",
+        "Preserve nuance and dissenting evidence.",
+        "Show the next learning questions."
+      ],
+      "rubric_dimensions": [
+        "Problem framing",
+        "Tradeoff rigor",
+        "Execution readiness"
+      ]
+    }
+  ]
+}

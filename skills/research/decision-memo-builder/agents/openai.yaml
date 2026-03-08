@@ -1,0 +1,28 @@
+version: 1
+skill:
+  name: Decision Memo Builder
+  slug: decision-memo-builder
+  category: research
+  maturity: scaffold
+  description: Use when a decision needs a formal memo instead of an unstructured summary.
+  triggers:
+    - You need to turn research into a decision memo.
+    - Stakeholders need options, tradeoffs, and a recommendation in one place.
+  expected_inputs:
+    - background
+    - decision statement
+    - evidence
+    - options
+  expected_outputs:
+    - decision memo
+    - option comparison
+    - recommendation
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

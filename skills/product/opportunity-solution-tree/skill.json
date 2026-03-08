@@ -1,0 +1,30 @@
+{
+  "slug": "opportunity-solution-tree",
+  "category": "product",
+  "maturity": "experimental",
+  "summary": "Structure an opportunity solution tree from product goals, opportunities, and candidate solutions.",
+  "triggers": [
+    "The team wants to connect a product goal to candidate discovery paths.",
+    "Discovery conversations need more structure than a backlog list."
+  ],
+  "expected_inputs": [
+    "goal",
+    "known opportunities",
+    "candidate ideas",
+    "constraints"
+  ],
+  "expected_outputs": [
+    "opportunity tree",
+    "assumption notes",
+    "discovery next steps"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "product",
+    "discovery",
+    "mapping"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

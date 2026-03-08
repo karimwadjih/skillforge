@@ -1,0 +1,27 @@
+version: 1
+skill:
+  name: Customer Proof Extractor
+  slug: customer-proof-extractor
+  category: gtm
+  maturity: experimental
+  description: Use when teams need stronger proof language rooted in actual customer evidence.
+  triggers:
+    - The team needs customer proof for messaging or sales enablement.
+    - Evidence exists in raw materials but not in reusable form.
+  expected_inputs:
+    - calls or interviews
+    - customer stories
+    - target use cases
+  expected_outputs:
+    - proof point set
+    - quote candidates
+    - usage notes
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

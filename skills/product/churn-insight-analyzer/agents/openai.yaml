@@ -1,0 +1,27 @@
+version: 1
+skill:
+  name: Churn Insight Analyzer
+  slug: churn-insight-analyzer
+  category: product
+  maturity: experimental
+  description: Use when churn data, interviews, and support inputs need to become a product-facing analysis.
+  triggers:
+    - The team needs a better story behind churn than top-level metrics alone.
+    - Retention work needs hypothesis generation from mixed evidence.
+  expected_inputs:
+    - churn metrics
+    - customer feedback
+    - segment context
+  expected_outputs:
+    - churn theme summary
+    - retention hypotheses
+    - follow-up questions
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

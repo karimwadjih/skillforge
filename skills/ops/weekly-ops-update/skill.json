@@ -1,0 +1,32 @@
+{
+  "slug": "weekly-ops-update",
+  "category": "ops",
+  "maturity": "frontier",
+  "summary": "Build a weekly operating update that highlights signal, risk, and follow-ups without reading like status spam.",
+  "triggers": [
+    "A weekly operating update needs to be synthesized from many small inputs.",
+    "Leaders need the signal from operations without reading every source document."
+  ],
+  "expected_inputs": [
+    "weekly operational notes",
+    "metrics",
+    "issues",
+    "cross-functional updates"
+  ],
+  "expected_outputs": [
+    "weekly ops update",
+    "key changes",
+    "risks",
+    "follow-up items"
+  ],
+  "evaluation_status": "benchmarked",
+  "tags": [
+    "ops",
+    "weekly",
+    "updates",
+    "flagship"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

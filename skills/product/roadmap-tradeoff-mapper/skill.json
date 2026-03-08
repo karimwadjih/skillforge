@@ -1,0 +1,32 @@
+{
+  "slug": "roadmap-tradeoff-mapper",
+  "category": "product",
+  "maturity": "frontier",
+  "summary": "Compare competing roadmap bets with explicit upside, delay cost, dependency drag, and a forced sequence.",
+  "triggers": [
+    "Two or more roadmap bets are competing for the same quarter and every argument sounds plausible in isolation.",
+    "Stakeholders keep ranking ideas without showing what each choice delays, blocks, or makes harder later."
+  ],
+  "expected_inputs": [
+    "candidate roadmap options",
+    "business or product goals",
+    "constraints and capacity assumptions",
+    "dependencies and timing risks",
+    "known evidence for each option"
+  ],
+  "expected_outputs": [
+    "tradeoff map",
+    "option-by-option comparison",
+    "recommended sequence or cut line",
+    "open evidence gaps"
+  ],
+  "evaluation_status": "sampled",
+  "tags": [
+    "product",
+    "roadmap",
+    "tradeoffs"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

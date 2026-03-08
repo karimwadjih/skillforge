@@ -1,0 +1,32 @@
+{
+  "slug": "sales-call-brief",
+  "category": "gtm",
+  "maturity": "frontier",
+  "summary": "Prepare an account-specific call brief with stakeholder intent, likely objections, and the best next move.",
+  "triggers": [
+    "A high-stakes prospect, renewal, or escalation call needs sharper prep than the CRM notes provide.",
+    "The account history is noisy enough that the team needs one grounded pre-call artifact before walking in."
+  ],
+  "expected_inputs": [
+    "account context and stage",
+    "recent activity or call notes",
+    "meeting objective",
+    "known stakeholders and risks",
+    "available proof points or weak spots"
+  ],
+  "expected_outputs": [
+    "sales call brief",
+    "stakeholder-specific talk track priorities",
+    "objection prep",
+    "follow-up plan"
+  ],
+  "evaluation_status": "sampled",
+  "tags": [
+    "gtm",
+    "sales",
+    "meetings"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

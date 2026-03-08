@@ -1,0 +1,29 @@
+{
+  "slug": "test-plan-designer",
+  "category": "engineering",
+  "maturity": "experimental",
+  "summary": "Design a test plan for a change, workflow, or system area.",
+  "triggers": [
+    "A meaningful change needs a structured test plan.",
+    "Teams need to define test scope before implementation or rollout."
+  ],
+  "expected_inputs": [
+    "change description",
+    "risk areas",
+    "critical paths"
+  ],
+  "expected_outputs": [
+    "test plan",
+    "coverage map",
+    "edge-case list"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "engineering",
+    "testing",
+    "quality"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

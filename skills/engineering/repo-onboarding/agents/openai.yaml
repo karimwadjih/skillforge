@@ -1,0 +1,30 @@
+version: 1
+skill:
+  name: Repo Onboarding
+  slug: repo-onboarding
+  category: engineering
+  maturity: certified
+  description: Use when someone needs to get productive in a repository quickly without reverse-engineering the whole system from scratch.
+  triggers:
+    - A new engineer needs to understand a repository quickly.
+    - A contributor needs a grounded map of setup, architecture, and safe starting points.
+  expected_inputs:
+    - repository tree
+    - package manifests
+    - configuration files
+    - docs or recent PRs if available
+  expected_outputs:
+    - onboarding brief
+    - setup sequence
+    - system map
+    - first-task suggestions
+    - open questions
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

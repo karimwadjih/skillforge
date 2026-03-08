@@ -1,0 +1,27 @@
+version: 1
+skill:
+  name: Market Signal Scanner
+  slug: market-signal-scanner
+  category: research
+  maturity: experimental
+  description: Use when you need to summarize changes in a market without pretending every signal carries equal weight.
+  triggers:
+    - A market is changing and the team needs a concise weekly or monthly view.
+    - You need to separate important external signals from background noise.
+  expected_inputs:
+    - signal list
+    - industry context
+    - time window
+  expected_outputs:
+    - ranked signal summary
+    - implication notes
+    - watch list
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

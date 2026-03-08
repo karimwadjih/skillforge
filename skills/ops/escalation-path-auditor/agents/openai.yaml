@@ -1,0 +1,27 @@
+version: 1
+skill:
+  name: Escalation Path Auditor
+  slug: escalation-path-auditor
+  category: ops
+  maturity: scaffold
+  description: Use when an escalation process exists but does not behave clearly under pressure.
+  triggers:
+    - An escalation path needs review after confusion or delay.
+    - Leaders want to know whether owners and triggers are explicit enough.
+  expected_inputs:
+    - current escalation process
+    - owners
+    - incident examples
+  expected_outputs:
+    - audit summary
+    - failure points
+    - improvement recommendations
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

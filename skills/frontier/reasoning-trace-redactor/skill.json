@@ -1,0 +1,29 @@
+{
+  "slug": "reasoning-trace-redactor",
+  "category": "frontier",
+  "maturity": "scaffold",
+  "summary": "Design a safe redaction approach for internal reasoning traces or sensitive analysis artifacts.",
+  "triggers": [
+    "A team wants to share an analysis artifact without exposing sensitive internal traces.",
+    "Reasoning or review notes need a structured redaction pass."
+  ],
+  "expected_inputs": [
+    "artifact to redact",
+    "sharing audience",
+    "sensitivity concerns"
+  ],
+  "expected_outputs": [
+    "redaction plan",
+    "safe-share artifact notes",
+    "risk warnings"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "frontier",
+    "redaction",
+    "privacy"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

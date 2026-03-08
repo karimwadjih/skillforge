@@ -1,0 +1,31 @@
+{
+  "slug": "pipeline-review-prep",
+  "category": "gtm",
+  "maturity": "experimental",
+  "summary": "Prepare a clean pipeline review with deal movement, risks, and leadership discussion points.",
+  "triggers": [
+    "A pipeline review meeting needs a better prep artifact.",
+    "Leaders need a concise view of movement, risk, and next decisions."
+  ],
+  "expected_inputs": [
+    "pipeline snapshot",
+    "deal notes",
+    "targets",
+    "known risks"
+  ],
+  "expected_outputs": [
+    "pipeline review brief",
+    "movement summary",
+    "risk callouts",
+    "decision prompts"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "gtm",
+    "pipeline",
+    "forecasting"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

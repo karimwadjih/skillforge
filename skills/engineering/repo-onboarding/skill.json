@@ -1,0 +1,34 @@
+{
+  "slug": "repo-onboarding",
+  "category": "engineering",
+  "maturity": "certified",
+  "summary": "Turn an unfamiliar codebase into a fast-start onboarding brief with setup, architecture, and first-task guidance.",
+  "triggers": [
+    "A new engineer needs to understand a repository quickly.",
+    "A contributor needs a grounded map of setup, architecture, and safe starting points."
+  ],
+  "expected_inputs": [
+    "repository tree",
+    "package manifests",
+    "configuration files",
+    "docs or recent PRs if available"
+  ],
+  "expected_outputs": [
+    "onboarding brief",
+    "setup sequence",
+    "system map",
+    "first-task suggestions",
+    "open questions"
+  ],
+  "evaluation_status": "benchmarked",
+  "tags": [
+    "engineering",
+    "onboarding",
+    "repository",
+    "flagship"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ],
+  "manual_review": "passed"
+}

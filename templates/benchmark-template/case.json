@@ -1,0 +1,12 @@
+{
+  "slug": "new-skill",
+  "prompts": [
+    {
+      "id": "prompt-1",
+      "prompt": "Describe the benchmark prompt here.",
+      "minimum_expectations": [
+        "List the minimum expectations."
+      ]
+    }
+  ]
+}

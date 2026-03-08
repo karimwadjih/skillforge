@@ -1,0 +1,31 @@
+{
+  "slug": "kpi-anomaly-brief",
+  "category": "ops",
+  "maturity": "frontier",
+  "summary": "Explain a KPI anomaly with possible drivers, confidence, and recommended next checks.",
+  "triggers": [
+    "A KPI moved unexpectedly and needs a brief explanation.",
+    "A team must separate signal from dashboard noise."
+  ],
+  "expected_inputs": [
+    "metric change",
+    "time window",
+    "related context",
+    "known hypotheses"
+  ],
+  "expected_outputs": [
+    "anomaly brief",
+    "likely drivers",
+    "confidence notes",
+    "next checks"
+  ],
+  "evaluation_status": "sampled",
+  "tags": [
+    "ops",
+    "metrics",
+    "analysis"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

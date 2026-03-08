@@ -1,0 +1,29 @@
+{
+  "slug": "changelog-composer",
+  "category": "docs",
+  "maturity": "experimental",
+  "summary": "Compose a clear changelog entry set from commits, PRs, or release notes.",
+  "triggers": [
+    "Release changes need a human-readable changelog.",
+    "Teams need a changelog draft from commits or PR summaries."
+  ],
+  "expected_inputs": [
+    "change list",
+    "audience",
+    "version context"
+  ],
+  "expected_outputs": [
+    "changelog draft",
+    "highlights",
+    "upgrade notes"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "docs",
+    "changelog",
+    "releases"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

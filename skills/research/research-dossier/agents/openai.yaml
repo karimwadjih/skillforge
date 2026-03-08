@@ -1,0 +1,29 @@
+version: 1
+skill:
+  name: Research Dossier
+  slug: research-dossier
+  category: research
+  maturity: certified
+  description: Use when a team needs a structured research brief instead of raw notes, links, and loosely connected takeaways.
+  triggers:
+    - You need to brief a team on a topic that spans many sources or interviews.
+    - Raw research notes are piling up and decisions are getting delayed.
+  expected_inputs:
+    - source documents or links
+    - research questions
+    - decision context
+    - known constraints
+  expected_outputs:
+    - dossier summary
+    - evidence-backed findings
+    - risks and open questions
+    - recommended next actions
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

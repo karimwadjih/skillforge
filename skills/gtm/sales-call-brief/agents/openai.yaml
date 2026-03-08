@@ -1,0 +1,30 @@
+version: 1
+skill:
+  name: Sales Call Brief
+  slug: sales-call-brief
+  category: gtm
+  maturity: frontier
+  description: Use when a revenue team needs a call plan grounded in account reality, not generic pitch prep.
+  triggers:
+    - A high-stakes prospect, renewal, or escalation call needs sharper prep than the CRM notes provide.
+    - The account history is noisy enough that the team needs one grounded pre-call artifact before walking in.
+  expected_inputs:
+    - account context and stage
+    - recent activity or call notes
+    - meeting objective
+    - known stakeholders and risks
+    - available proof points or weak spots
+  expected_outputs:
+    - sales call brief
+    - stakeholder-specific talk track priorities
+    - objection prep
+    - follow-up plan
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

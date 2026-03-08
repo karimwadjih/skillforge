@@ -1,0 +1,28 @@
+version: 1
+skill:
+  name: Campaign Message Matrix
+  slug: campaign-message-matrix
+  category: gtm
+  maturity: experimental
+  description: Use when campaign planning needs a message map instead of a pile of copy variants.
+  triggers:
+    - A campaign needs channel-specific message planning.
+    - Teams need to align on core and adapted messages across audiences.
+  expected_inputs:
+    - campaign objective
+    - audiences
+    - channels
+    - proof points
+  expected_outputs:
+    - message matrix
+    - channel guidance
+    - CTA map
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

@@ -1,0 +1,30 @@
+{
+  "slug": "prompt-regression-hunter",
+  "category": "frontier",
+  "maturity": "frontier",
+  "summary": "Hunt for regressions between prompt or skill versions using consistent comparisons.",
+  "triggers": [
+    "A skill or prompt changed and regression checking is needed.",
+    "Version comparisons need more than subjective side-by-side reading."
+  ],
+  "expected_inputs": [
+    "version A",
+    "version B",
+    "comparison cases",
+    "scoring focus"
+  ],
+  "expected_outputs": [
+    "regression brief",
+    "difference summary",
+    "risk cases"
+  ],
+  "evaluation_status": "sampled",
+  "tags": [
+    "frontier",
+    "regression",
+    "evaluation"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

@@ -1,0 +1,29 @@
+version: 1
+skill:
+  name: KPI Anomaly Brief
+  slug: kpi-anomaly-brief
+  category: ops
+  maturity: frontier
+  description: Use when a metric moves sharply and leaders need a concise interpretation artifact quickly.
+  triggers:
+    - A KPI moved unexpectedly and needs a brief explanation.
+    - A team must separate signal from dashboard noise.
+  expected_inputs:
+    - metric change
+    - time window
+    - related context
+    - known hypotheses
+  expected_outputs:
+    - anomaly brief
+    - likely drivers
+    - confidence notes
+    - next checks
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

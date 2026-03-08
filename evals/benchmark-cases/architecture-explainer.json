@@ -1,0 +1,51 @@
+{
+  "slug": "architecture-explainer",
+  "maturity": "frontier",
+  "prompts": [
+    {
+      "id": "architecture-explainer-prompt-1",
+      "title": "Existing workflow under pressure",
+      "prompt": "Use Architecture Explainer to produce an architecture explainer with system boundaries, component roles, flows, tradeoffs, and known complexity hotspots for the current workstream.",
+      "minimum_expectations": [
+        "State the workflow objective in plain language.",
+        "Produce an architecture explainer with system boundaries, component roles, flows, tradeoffs, and known complexity hotspots with explicit structure.",
+        "Call out missing information and the next decision."
+      ],
+      "rubric_dimensions": [
+        "Technical accuracy",
+        "Actionability",
+        "Change awareness"
+      ]
+    },
+    {
+      "id": "architecture-explainer-prompt-2",
+      "title": "Partial inputs",
+      "prompt": "Draft the strongest version of an architecture explainer with system boundaries, component roles, flows, tradeoffs, and known complexity hotspots using only the available inputs and list what is missing.",
+      "minimum_expectations": [
+        "Separate knowns from assumptions.",
+        "Prioritize the most decision-relevant gaps.",
+        "Keep the output usable even when some inputs are missing."
+      ],
+      "rubric_dimensions": [
+        "Technical accuracy",
+        "Actionability",
+        "Change awareness"
+      ]
+    },
+    {
+      "id": "architecture-explainer-prompt-3",
+      "title": "Decision review",
+      "prompt": "Summarize the output from Architecture Explainer for an operator or leader who needs the decision-ready version.",
+      "minimum_expectations": [
+        "Highlight the recommendation or key conclusion.",
+        "Show risks or tradeoffs.",
+        "End with concrete next actions."
+      ],
+      "rubric_dimensions": [
+        "Technical accuracy",
+        "Actionability",
+        "Change awareness"
+      ]
+    }
+  ]
+}

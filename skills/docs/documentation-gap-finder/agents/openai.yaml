@@ -1,0 +1,27 @@
+version: 1
+skill:
+  name: Documentation Gap Finder
+  slug: documentation-gap-finder
+  category: docs
+  maturity: frontier
+  description: Use when docs exist but are failing readers in ways that need prioritization rather than generic critique.
+  triggers:
+    - A documentation area needs a gap audit.
+    - Teams want to know which missing docs matter most to users or contributors.
+  expected_inputs:
+    - doc set
+    - user type
+    - product or workflow context
+  expected_outputs:
+    - gap audit
+    - priority list
+    - recommended doc additions
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

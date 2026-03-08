@@ -1,0 +1,29 @@
+{
+  "slug": "release-note-editor",
+  "category": "docs",
+  "maturity": "experimental",
+  "summary": "Edit release notes for clarity, audience fit, and upgrade usefulness.",
+  "triggers": [
+    "Release notes need audience-aware editing.",
+    "The team wants to improve clarity and upgrade guidance."
+  ],
+  "expected_inputs": [
+    "draft release notes",
+    "audience",
+    "version context"
+  ],
+  "expected_outputs": [
+    "edited release notes",
+    "clarity suggestions",
+    "upgrade highlights"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "docs",
+    "release-notes",
+    "editing"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

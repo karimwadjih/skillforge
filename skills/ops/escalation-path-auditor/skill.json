@@ -1,0 +1,29 @@
+{
+  "slug": "escalation-path-auditor",
+  "category": "ops",
+  "maturity": "scaffold",
+  "summary": "Audit an escalation path for clarity, timing, and owner confusion.",
+  "triggers": [
+    "An escalation path needs review after confusion or delay.",
+    "Leaders want to know whether owners and triggers are explicit enough."
+  ],
+  "expected_inputs": [
+    "current escalation process",
+    "owners",
+    "incident examples"
+  ],
+  "expected_outputs": [
+    "audit summary",
+    "failure points",
+    "improvement recommendations"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "ops",
+    "escalation",
+    "governance"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

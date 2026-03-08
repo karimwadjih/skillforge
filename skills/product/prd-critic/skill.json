@@ -1,0 +1,32 @@
+{
+  "slug": "prd-critic",
+  "category": "product",
+  "maturity": "frontier",
+  "summary": "Critique a product requirements document for clarity, scope, risk, and execution readiness.",
+  "triggers": [
+    "A PRD is drafted and needs rigorous critique before commitment.",
+    "The team suspects a requirements doc is vague, bloated, or risky."
+  ],
+  "expected_inputs": [
+    "product requirements document",
+    "strategy context",
+    "constraints",
+    "target audience"
+  ],
+  "expected_outputs": [
+    "critique summary",
+    "gap list",
+    "risk list",
+    "revision recommendations"
+  ],
+  "evaluation_status": "benchmarked",
+  "tags": [
+    "product",
+    "prd",
+    "review",
+    "flagship"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

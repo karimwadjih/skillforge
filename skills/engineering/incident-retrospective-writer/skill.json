@@ -1,0 +1,31 @@
+{
+  "slug": "incident-retrospective-writer",
+  "category": "engineering",
+  "maturity": "experimental",
+  "summary": "Draft a structured retrospective after an incident with chronology, causes, and follow-ups.",
+  "triggers": [
+    "An incident occurred and the follow-up needs a structured write-up.",
+    "The team has facts and notes but not a coherent retrospective."
+  ],
+  "expected_inputs": [
+    "timeline",
+    "impact summary",
+    "remediation actions",
+    "open questions"
+  ],
+  "expected_outputs": [
+    "retrospective draft",
+    "chronology",
+    "root-cause analysis",
+    "follow-up actions"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "engineering",
+    "incident",
+    "retro"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

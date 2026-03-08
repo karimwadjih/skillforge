@@ -1,0 +1,29 @@
+version: 1
+skill:
+  name: Competitor Briefing
+  slug: competitor-briefing
+  category: research
+  maturity: experimental
+  description: Use when the team needs a disciplined competitor read, not a screenshot summary or a panic memo.
+  triggers:
+    - A competitor announcement, launch, or pricing move is creating internal panic or overreaction.
+    - Leadership needs a brief that separates credible signal from theater before changing roadmap or GTM plans.
+  expected_inputs:
+    - competitor signal set such as launches, pricing changes, win-loss notes, or field reports
+    - your current product or GTM context
+    - known customer or segment overlap
+    - decision horizon for response
+  expected_outputs:
+    - competitor briefing
+    - signal-confidence notes
+    - likely strategic intent
+    - recommended internal response options
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

@@ -1,0 +1,28 @@
+version: 1
+skill:
+  name: Product Risk Register
+  slug: product-risk-register
+  category: product
+  maturity: scaffold
+  description: Use when a launch or initiative needs an explicit record of product, delivery, and adoption risks.
+  triggers:
+    - A product initiative is moving forward without a clear risk register.
+    - Leaders want a structured view of product risks before approval.
+  expected_inputs:
+    - initiative scope
+    - timeline
+    - dependencies
+    - known concerns
+  expected_outputs:
+    - risk register
+    - severity view
+    - mitigation notes
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

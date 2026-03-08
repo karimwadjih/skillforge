@@ -1,0 +1,33 @@
+{
+  "slug": "workflow-compiler",
+  "category": "infrastructure",
+  "maturity": "frontier",
+  "summary": "Compile a human workflow into a reusable, explicit skill package with steps, inputs, outputs, and failure handling.",
+  "triggers": [
+    "A workflow is repeated often enough to encode into a reusable skill.",
+    "A team needs to turn human process knowledge into an explicit workflow package."
+  ],
+  "expected_inputs": [
+    "workflow description",
+    "inputs",
+    "operators",
+    "failure conditions",
+    "desired outputs"
+  ],
+  "expected_outputs": [
+    "compiled workflow",
+    "skill scaffold",
+    "guardrails",
+    "test prompts"
+  ],
+  "evaluation_status": "benchmarked",
+  "tags": [
+    "infrastructure",
+    "workflows",
+    "skills",
+    "flagship"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

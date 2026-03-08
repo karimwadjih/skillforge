@@ -1,0 +1,28 @@
+version: 1
+skill:
+  name: Safety Case Builder
+  slug: safety-case-builder
+  category: frontier
+  maturity: experimental
+  description: Use when an agent workflow needs a more explicit risk story before wider rollout.
+  triggers:
+    - A workflow needs a safety case.
+    - The team wants a more explicit map of controls and residual risks.
+  expected_inputs:
+    - workflow
+    - risk concerns
+    - existing controls
+  expected_outputs:
+    - safety case
+    - risk map
+    - control summary
+    - residual risks
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

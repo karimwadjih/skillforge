@@ -1,0 +1,23 @@
+{
+  "slug": "go-to-market-pack",
+  "name": "Go-To-Market Pack",
+  "summary": "A GTM execution pack for launches, positioning, proof, and higher-quality revenue conversations.",
+  "audience": "GTM leads, PMMs, and revenue teams",
+  "included_skills": [
+    "launch-plan-generator",
+    "positioning-statement-builder",
+    "sales-call-brief",
+    "campaign-message-matrix",
+    "customer-proof-extractor",
+    "pipeline-review-prep"
+  ],
+  "use_cases": [
+    "Prepare better launches",
+    "Strengthen positioning and account prep",
+    "Improve revenue and pipeline operating reviews"
+  ],
+  "quick_start": [
+    "Lock positioning before building downstream message assets.",
+    "Use launch planning and proof extraction together for stronger GTM execution."
+  ]
+}

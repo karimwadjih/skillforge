@@ -1,0 +1,30 @@
+{
+  "slug": "safety-case-builder",
+  "category": "frontier",
+  "maturity": "experimental",
+  "summary": "Build a safety case for an agent workflow by mapping risks, controls, and residual uncertainty.",
+  "triggers": [
+    "A workflow needs a safety case.",
+    "The team wants a more explicit map of controls and residual risks."
+  ],
+  "expected_inputs": [
+    "workflow",
+    "risk concerns",
+    "existing controls"
+  ],
+  "expected_outputs": [
+    "safety case",
+    "risk map",
+    "control summary",
+    "residual risks"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "frontier",
+    "safety",
+    "governance"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

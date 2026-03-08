@@ -1,0 +1,29 @@
+{
+  "slug": "hiring-loop-summarizer",
+  "category": "ops",
+  "maturity": "experimental",
+  "summary": "Summarize a hiring loop with themes, risks, and decision support notes.",
+  "triggers": [
+    "A hiring panel needs a better synthesis of interview feedback.",
+    "Interview notes exist but not a decision-ready summary."
+  ],
+  "expected_inputs": [
+    "interview feedback",
+    "role rubric",
+    "known concerns"
+  ],
+  "expected_outputs": [
+    "loop summary",
+    "signal themes",
+    "decision support notes"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "ops",
+    "hiring",
+    "interviews"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

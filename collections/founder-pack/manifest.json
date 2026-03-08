@@ -1,0 +1,23 @@
+{
+  "slug": "founder-pack",
+  "name": "Founder Pack",
+  "summary": "A compact operating set for founders who need faster research, tighter product judgment, and cleaner weekly decision artifacts.",
+  "audience": "Founders and startup operators",
+  "included_skills": [
+    "research-dossier",
+    "prd-critic",
+    "launch-plan-generator",
+    "weekly-ops-update",
+    "executive-meeting-prep",
+    "sales-call-brief"
+  ],
+  "use_cases": [
+    "Pressure-test strategy and roadmap calls",
+    "Prepare sharper launch and revenue conversations",
+    "Run a weekly operating cadence without status bloat"
+  ],
+  "quick_start": [
+    "Pick one operating problem that repeats every week.",
+    "Use the most relevant flagship skill first, then expand into related pack assets."
+  ]
+}

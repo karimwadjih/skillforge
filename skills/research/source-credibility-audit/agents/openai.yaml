@@ -1,0 +1,27 @@
+version: 1
+skill:
+  name: Source Credibility Audit
+  slug: source-credibility-audit
+  category: research
+  maturity: experimental
+  description: Use when research inputs vary widely in quality and someone needs to sort reliable evidence from weak material.
+  triggers:
+    - The research set includes sources with mixed credibility.
+    - A team needs to know which inputs are strong enough to rely on.
+  expected_inputs:
+    - source list
+    - decision context
+    - quality concerns
+  expected_outputs:
+    - credibility audit
+    - source tiers
+    - usage notes
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

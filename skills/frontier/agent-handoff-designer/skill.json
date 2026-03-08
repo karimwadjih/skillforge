@@ -1,0 +1,29 @@
+{
+  "slug": "agent-handoff-designer",
+  "category": "frontier",
+  "maturity": "experimental",
+  "summary": "Design a handoff between agents or workflow stages with explicit contracts.",
+  "triggers": [
+    "A workflow has multiple agent or human-agent stages.",
+    "A handoff contract needs to be specified to reduce dropped context."
+  ],
+  "expected_inputs": [
+    "workflow stages",
+    "handoff points",
+    "required context"
+  ],
+  "expected_outputs": [
+    "handoff design",
+    "contract notes",
+    "failure points"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "frontier",
+    "agents",
+    "handoffs"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

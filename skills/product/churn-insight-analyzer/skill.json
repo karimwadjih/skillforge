@@ -1,0 +1,29 @@
+{
+  "slug": "churn-insight-analyzer",
+  "category": "product",
+  "maturity": "experimental",
+  "summary": "Analyze churn signals and convert them into actionable themes and retention hypotheses.",
+  "triggers": [
+    "The team needs a better story behind churn than top-level metrics alone.",
+    "Retention work needs hypothesis generation from mixed evidence."
+  ],
+  "expected_inputs": [
+    "churn metrics",
+    "customer feedback",
+    "segment context"
+  ],
+  "expected_outputs": [
+    "churn theme summary",
+    "retention hypotheses",
+    "follow-up questions"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "product",
+    "retention",
+    "analysis"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

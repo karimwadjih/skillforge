@@ -1,0 +1,26 @@
+{
+  "slug": "documentation-gap-finder",
+  "category": "docs",
+  "maturity": "frontier",
+  "tier": "developed",
+  "total": 90,
+  "breakdown": {
+    "structure": 30,
+    "metadata": 20,
+    "content": 20,
+    "rubric": 10,
+    "tests": 10
+  },
+  "counts": {
+    "examples": 2,
+    "edgeCases": 3,
+    "tests": 3,
+    "rubricCriteria": 3,
+    "benchmarkAssets": 0
+  },
+  "benchmarkCovered": false,
+  "certificationEligible": false,
+  "recommendations": [
+    "Add more realistic examples to strengthen reuse and evaluation coverage."
+  ]
+}

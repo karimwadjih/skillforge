@@ -1,0 +1,32 @@
+{
+  "slug": "architecture-explainer",
+  "category": "engineering",
+  "maturity": "frontier",
+  "summary": "Explain a system or codebase architecture in a way that is grounded, digestible, and useful for future work.",
+  "triggers": [
+    "A system needs to be explained to new contributors or adjacent teams.",
+    "Architecture details exist in code but not in a digestible narrative."
+  ],
+  "expected_inputs": [
+    "codebase or architecture artifacts",
+    "audience",
+    "system boundaries",
+    "known pain points"
+  ],
+  "expected_outputs": [
+    "architecture overview",
+    "component map",
+    "data or control flow summary",
+    "key tradeoffs"
+  ],
+  "evaluation_status": "benchmarked",
+  "tags": [
+    "engineering",
+    "architecture",
+    "explanation",
+    "flagship"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

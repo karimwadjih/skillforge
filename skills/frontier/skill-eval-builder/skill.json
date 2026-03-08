@@ -1,0 +1,32 @@
+{
+  "slug": "skill-eval-builder",
+  "category": "frontier",
+  "maturity": "frontier",
+  "summary": "Build an evaluation scaffold for a Skill with prompts, scoring dimensions, and failure probes.",
+  "triggers": [
+    "A skill needs evaluation scaffolding.",
+    "A team wants prompts, score dimensions, and failure probes for a workflow skill."
+  ],
+  "expected_inputs": [
+    "skill description",
+    "expected behavior",
+    "failure concerns",
+    "output contract"
+  ],
+  "expected_outputs": [
+    "eval plan",
+    "test prompts",
+    "score dimensions",
+    "failure probes"
+  ],
+  "evaluation_status": "benchmarked",
+  "tags": [
+    "frontier",
+    "evaluation",
+    "skills",
+    "flagship"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

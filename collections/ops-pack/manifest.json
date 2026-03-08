@@ -1,0 +1,23 @@
+{
+  "slug": "ops-pack",
+  "name": "Ops Pack",
+  "summary": "Recurring operating-system skills for cadence design, leadership prep, escalation clarity, and weekly signal review.",
+  "audience": "Operators, chiefs of staff, and operations leads",
+  "included_skills": [
+    "weekly-ops-update",
+    "executive-meeting-prep",
+    "operating-rhythm-designer",
+    "kpi-anomaly-brief",
+    "vendor-evaluation-memo",
+    "escalation-path-auditor"
+  ],
+  "use_cases": [
+    "Tighten recurring reviews and updates",
+    "Improve leadership decision prep",
+    "Clarify escalation and operating ownership"
+  ],
+  "quick_start": [
+    "Start with Weekly Ops Update for recurring cadence.",
+    "Use Executive Meeting Prep and KPI Anomaly Brief for decision-heavy weeks."
+  ]
+}

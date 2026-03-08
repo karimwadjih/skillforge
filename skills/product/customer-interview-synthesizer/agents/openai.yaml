@@ -1,0 +1,29 @@
+version: 1
+skill:
+  name: Customer Interview Synthesizer
+  slug: customer-interview-synthesizer
+  category: product
+  maturity: frontier
+  description: Use when customer conversations are rich but scattered and the team needs a synthesis that respects nuance.
+  triggers:
+    - Interview notes need to become a product-facing synthesis.
+    - Multiple interviews reveal patterns but also contradictions.
+  expected_inputs:
+    - interview notes or transcripts
+    - research goal
+    - customer segments
+    - known hypotheses
+  expected_outputs:
+    - theme synthesis
+    - segment differences
+    - evidence quotes
+    - product implications
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

@@ -1,0 +1,30 @@
+{
+  "slug": "campaign-message-matrix",
+  "category": "gtm",
+  "maturity": "experimental",
+  "summary": "Create a message matrix across audience segments, channels, and desired actions.",
+  "triggers": [
+    "A campaign needs channel-specific message planning.",
+    "Teams need to align on core and adapted messages across audiences."
+  ],
+  "expected_inputs": [
+    "campaign objective",
+    "audiences",
+    "channels",
+    "proof points"
+  ],
+  "expected_outputs": [
+    "message matrix",
+    "channel guidance",
+    "CTA map"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "gtm",
+    "campaigns",
+    "messaging"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

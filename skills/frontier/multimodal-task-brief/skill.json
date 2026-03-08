@@ -1,0 +1,30 @@
+{
+  "slug": "multimodal-task-brief",
+  "category": "frontier",
+  "maturity": "experimental",
+  "summary": "Create a task brief for workflows that span text, images, or other media inputs.",
+  "triggers": [
+    "A task involves text plus image or media inputs.",
+    "The team needs a cleaner multimodal task brief."
+  ],
+  "expected_inputs": [
+    "task goal",
+    "modalities involved",
+    "constraints",
+    "expected outputs"
+  ],
+  "expected_outputs": [
+    "task brief",
+    "modality handling notes",
+    "output contract"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "frontier",
+    "multimodal",
+    "task-design"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

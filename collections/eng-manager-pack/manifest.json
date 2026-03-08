@@ -1,0 +1,23 @@
+{
+  "slug": "eng-manager-pack",
+  "name": "Engineering Manager Pack",
+  "summary": "A set for onboarding, architecture explanation, migration planning, and bug triage.",
+  "audience": "Engineering managers and tech leads",
+  "included_skills": [
+    "repo-onboarding",
+    "architecture-explainer",
+    "bug-triage",
+    "migration-planner",
+    "api-change-reviewer",
+    "test-plan-designer"
+  ],
+  "use_cases": [
+    "Accelerate team ramp-up",
+    "Review changes and migrations",
+    "Improve technical communication"
+  ],
+  "quick_start": [
+    "Use Repo Onboarding or Architecture Explainer for context building first.",
+    "Use Bug Triage or Migration Planner when a concrete engineering problem appears."
+  ]
+}

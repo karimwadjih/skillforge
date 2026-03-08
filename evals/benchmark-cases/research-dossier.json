@@ -1,0 +1,51 @@
+{
+  "slug": "research-dossier",
+  "maturity": "certified",
+  "prompts": [
+    {
+      "id": "research-dossier-prompt-1",
+      "title": "Market entry briefing",
+      "prompt": "Synthesize analyst notes, competitor pricing snapshots, customer calls, and internal assumptions into a market-entry dossier.",
+      "minimum_expectations": [
+        "Separate facts, inferences, and assumptions.",
+        "Map the strongest signals and the biggest unknowns.",
+        "End with a clear recommendation on whether to proceed, pause, or research further."
+      ],
+      "rubric_dimensions": [
+        "Source quality",
+        "Synthesis depth",
+        "Decision usefulness"
+      ]
+    },
+    {
+      "id": "research-dossier-prompt-2",
+      "title": "Interview-heavy synthesis",
+      "prompt": "Create a dossier from the interview notes, call recordings, and prior product metrics.",
+      "minimum_expectations": [
+        "Cluster recurring themes without erasing disagreement.",
+        "Show which findings are well supported and which are tentative.",
+        "Translate the findings into product or GTM implications."
+      ],
+      "rubric_dimensions": [
+        "Source quality",
+        "Synthesis depth",
+        "Decision usefulness"
+      ]
+    },
+    {
+      "id": "research-dossier-prompt-3",
+      "title": "Urgent board prep",
+      "prompt": "Produce a board-ready research dossier that keeps the short version crisp while preserving evidence quality underneath.",
+      "minimum_expectations": [
+        "Start with the key message for the board.",
+        "Keep the evidence traceable.",
+        "List the next questions that require more research before acting."
+      ],
+      "rubric_dimensions": [
+        "Source quality",
+        "Synthesis depth",
+        "Decision usefulness"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "customer-interview-synthesizer",
+  "category": "product",
+  "maturity": "frontier",
+  "summary": "Turn multiple customer interviews into a synthesis with themes, tensions, and product implications.",
+  "triggers": [
+    "Interview notes need to become a product-facing synthesis.",
+    "Multiple interviews reveal patterns but also contradictions."
+  ],
+  "expected_inputs": [
+    "interview notes or transcripts",
+    "research goal",
+    "customer segments",
+    "known hypotheses"
+  ],
+  "expected_outputs": [
+    "theme synthesis",
+    "segment differences",
+    "evidence quotes",
+    "product implications"
+  ],
+  "evaluation_status": "benchmarked",
+  "tags": [
+    "product",
+    "research",
+    "interviews",
+    "flagship"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

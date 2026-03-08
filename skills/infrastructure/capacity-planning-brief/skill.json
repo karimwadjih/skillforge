@@ -1,0 +1,30 @@
+{
+  "slug": "capacity-planning-brief",
+  "category": "infrastructure",
+  "maturity": "scaffold",
+  "summary": "Create a capacity planning brief for a service, workflow, or infrastructure area.",
+  "triggers": [
+    "Capacity questions need a more organized planning artifact.",
+    "Leaders want a summary of capacity risk and timing."
+  ],
+  "expected_inputs": [
+    "usage patterns",
+    "constraints",
+    "growth assumptions",
+    "current limits"
+  ],
+  "expected_outputs": [
+    "capacity brief",
+    "risk summary",
+    "planning recommendations"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "infrastructure",
+    "capacity",
+    "planning"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

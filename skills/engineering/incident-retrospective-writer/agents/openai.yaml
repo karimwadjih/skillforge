@@ -1,0 +1,29 @@
+version: 1
+skill:
+  name: Incident Retrospective Writer
+  slug: incident-retrospective-writer
+  category: engineering
+  maturity: experimental
+  description: Use when a team needs a clean retrospective draft from notes, timelines, and remediation records.
+  triggers:
+    - An incident occurred and the follow-up needs a structured write-up.
+    - The team has facts and notes but not a coherent retrospective.
+  expected_inputs:
+    - timeline
+    - impact summary
+    - remediation actions
+    - open questions
+  expected_outputs:
+    - retrospective draft
+    - chronology
+    - root-cause analysis
+    - follow-up actions
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

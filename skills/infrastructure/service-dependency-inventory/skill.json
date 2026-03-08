@@ -1,0 +1,29 @@
+{
+  "slug": "service-dependency-inventory",
+  "category": "infrastructure",
+  "maturity": "experimental",
+  "summary": "Inventory dependencies for a service and explain which ones matter most operationally.",
+  "triggers": [
+    "A service dependency inventory is needed for planning or resilience review.",
+    "Teams want a clearer dependency picture before change or migration work."
+  ],
+  "expected_inputs": [
+    "service context",
+    "dependency list",
+    "known critical paths"
+  ],
+  "expected_outputs": [
+    "dependency inventory",
+    "critical path notes",
+    "risk summary"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "infrastructure",
+    "services",
+    "dependencies"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

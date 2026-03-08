@@ -1,0 +1,29 @@
+{
+  "slug": "codebase-dependency-mapper",
+  "category": "engineering",
+  "maturity": "scaffold",
+  "summary": "Map important dependencies in a codebase and explain why they matter.",
+  "triggers": [
+    "A team needs a dependency map for a codebase.",
+    "Dependency complexity is making change planning harder."
+  ],
+  "expected_inputs": [
+    "repository structure",
+    "dependency manifests",
+    "service boundaries"
+  ],
+  "expected_outputs": [
+    "dependency map",
+    "risk notes",
+    "change hotspots"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "engineering",
+    "dependencies",
+    "mapping"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

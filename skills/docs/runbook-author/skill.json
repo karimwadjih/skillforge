@@ -1,0 +1,32 @@
+{
+  "slug": "runbook-author",
+  "category": "docs",
+  "maturity": "frontier",
+  "summary": "Turn fragile procedural knowledge into a runbook operators can follow and verify under pressure.",
+  "triggers": [
+    "A procedure matters enough operationally that relying on tribal memory is now risky.",
+    "An operator-facing workflow needs verification steps, failure containment, and escalation guidance before it is safe to reuse."
+  ],
+  "expected_inputs": [
+    "procedure or incident notes",
+    "system or environment context",
+    "prerequisites and permissions",
+    "known failure points",
+    "rollback or escalation options"
+  ],
+  "expected_outputs": [
+    "runbook draft",
+    "step-by-step procedure",
+    "verification checks",
+    "rollback and escalation notes"
+  ],
+  "evaluation_status": "sampled",
+  "tags": [
+    "docs",
+    "runbooks",
+    "operations"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

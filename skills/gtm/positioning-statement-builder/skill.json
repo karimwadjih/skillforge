@@ -1,0 +1,30 @@
+{
+  "slug": "positioning-statement-builder",
+  "category": "gtm",
+  "maturity": "frontier",
+  "summary": "Build a positioning statement with target audience, problem, value, and differentiation.",
+  "triggers": [
+    "A product or feature needs clearer positioning.",
+    "Messaging is drifting because the core value statement is not locked."
+  ],
+  "expected_inputs": [
+    "audience",
+    "problem",
+    "product value",
+    "alternatives"
+  ],
+  "expected_outputs": [
+    "positioning statement",
+    "supporting proof points",
+    "message guardrails"
+  ],
+  "evaluation_status": "sampled",
+  "tags": [
+    "gtm",
+    "positioning",
+    "messaging"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "executive-meeting-prep",
+  "category": "ops",
+  "maturity": "frontier",
+  "summary": "Prepare a leadership meeting brief with objectives, decisions, risks, and likely questions.",
+  "triggers": [
+    "An executive meeting needs a concise prep brief.",
+    "The team needs to anticipate decisions, risks, and likely questions."
+  ],
+  "expected_inputs": [
+    "agenda",
+    "supporting notes",
+    "participants",
+    "known tensions"
+  ],
+  "expected_outputs": [
+    "meeting prep brief",
+    "decision list",
+    "risk notes",
+    "question prep"
+  ],
+  "evaluation_status": "benchmarked",
+  "tags": [
+    "ops",
+    "executive",
+    "meetings",
+    "flagship"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

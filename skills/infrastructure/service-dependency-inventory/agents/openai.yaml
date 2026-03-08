@@ -1,0 +1,27 @@
+version: 1
+skill:
+  name: Service Dependency Inventory
+  slug: service-dependency-inventory
+  category: infrastructure
+  maturity: experimental
+  description: Use when a service depends on more systems than the team can easily keep in mind.
+  triggers:
+    - A service dependency inventory is needed for planning or resilience review.
+    - Teams want a clearer dependency picture before change or migration work.
+  expected_inputs:
+    - service context
+    - dependency list
+    - known critical paths
+  expected_outputs:
+    - dependency inventory
+    - critical path notes
+    - risk summary
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

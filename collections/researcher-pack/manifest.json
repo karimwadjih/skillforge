@@ -1,0 +1,23 @@
+{
+  "slug": "researcher-pack",
+  "name": "Researcher Pack",
+  "summary": "A synthesis-heavy pack for teams turning scattered evidence into dossiers, literature maps, and benchmark framing.",
+  "audience": "Researchers, strategy teams, and analyst functions",
+  "included_skills": [
+    "research-dossier",
+    "benchmark-brief",
+    "literature-map",
+    "competitor-briefing",
+    "source-credibility-audit",
+    "field-note-synthesizer"
+  ],
+  "use_cases": [
+    "Orient quickly in a new domain",
+    "Convert evidence into decision-ready briefs",
+    "Separate credibility review from benchmark design"
+  ],
+  "quick_start": [
+    "Use Research Dossier for broad synthesis and Literature Map for early orientation.",
+    "Keep credibility and benchmark framing separate instead of mixing them into one document."
+  ]
+}

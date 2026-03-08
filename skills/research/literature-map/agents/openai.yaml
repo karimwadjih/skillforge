@@ -1,0 +1,29 @@
+version: 1
+skill:
+  name: Literature Map
+  slug: literature-map
+  category: research
+  maturity: frontier
+  description: Use when a topic has too much literature to read linearly and the team needs the structure of the field before deep synthesis.
+  triggers:
+    - You need a fast orientation before a team spends a week reading the wrong sources.
+    - The literature is large, repetitive, or internally contested and you need the debate structure first.
+  expected_inputs:
+    - framing question or decision the reading should support
+    - seed bibliography, search results, or must-read source set
+    - time window or domain boundary
+    - constraints on depth, rigor, or turnaround time
+  expected_outputs:
+    - literature landscape map
+    - theme clusters and fault lines
+    - evidence-strength notes
+    - recommended reading path
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

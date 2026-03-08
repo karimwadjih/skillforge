@@ -1,0 +1,30 @@
+version: 1
+skill:
+  name: Tool Contract Auditor
+  slug: tool-contract-auditor
+  category: frontier
+  maturity: frontier
+  description: Use when a tool contract needs to survive agent use, retries, and machine interpretation instead of relying on human guesswork.
+  triggers:
+    - A tool or API is meant for agents, but the contract still reads like it was designed only for humans.
+    - The workflow depends on a tool whose inputs, outputs, or failure semantics are underspecified.
+  expected_inputs:
+    - tool description or schema
+    - parameter and response definitions
+    - known execution behavior
+    - retry or failure handling expectations
+    - examples of current usage if available
+  expected_outputs:
+    - tool contract audit
+    - ambiguity list
+    - failure and retry risk notes
+    - recommended contract fixes
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

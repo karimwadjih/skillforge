@@ -1,0 +1,29 @@
+version: 1
+skill:
+  name: Oncall Handoff Builder
+  slug: oncall-handoff-builder
+  category: infrastructure
+  maturity: frontier
+  description: Use when on-call context is changing hands and the next operator needs more than a raw ticket list.
+  triggers:
+    - An on-call shift handoff needs a stronger summary.
+    - Operators need to transfer current context, risks, and watch items.
+  expected_inputs:
+    - current incidents
+    - watch items
+    - pending changes
+    - operator notes
+  expected_outputs:
+    - handoff brief
+    - watch list
+    - risks
+    - follow-up notes
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

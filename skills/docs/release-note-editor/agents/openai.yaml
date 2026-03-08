@@ -1,0 +1,27 @@
+version: 1
+skill:
+  name: Release Note Editor
+  slug: release-note-editor
+  category: docs
+  maturity: experimental
+  description: Use when release notes exist but need a sharper edit before publication.
+  triggers:
+    - Release notes need audience-aware editing.
+    - The team wants to improve clarity and upgrade guidance.
+  expected_inputs:
+    - draft release notes
+    - audience
+    - version context
+  expected_outputs:
+    - edited release notes
+    - clarity suggestions
+    - upgrade highlights
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

@@ -1,0 +1,31 @@
+{
+  "slug": "competitor-briefing",
+  "category": "research",
+  "maturity": "experimental",
+  "summary": "Turn competitor noise into a briefing about intent, durability, and what your team should ignore.",
+  "triggers": [
+    "A competitor announcement, launch, or pricing move is creating internal panic or overreaction.",
+    "Leadership needs a brief that separates credible signal from theater before changing roadmap or GTM plans."
+  ],
+  "expected_inputs": [
+    "competitor signal set such as launches, pricing changes, win-loss notes, or field reports",
+    "your current product or GTM context",
+    "known customer or segment overlap",
+    "decision horizon for response"
+  ],
+  "expected_outputs": [
+    "competitor briefing",
+    "signal-confidence notes",
+    "likely strategic intent",
+    "recommended internal response options"
+  ],
+  "evaluation_status": "sampled",
+  "tags": [
+    "research",
+    "competition",
+    "strategy"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

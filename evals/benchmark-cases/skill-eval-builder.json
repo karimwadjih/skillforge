@@ -1,0 +1,51 @@
+{
+  "slug": "skill-eval-builder",
+  "maturity": "frontier",
+  "prompts": [
+    {
+      "id": "skill-eval-builder-prompt-1",
+      "title": "Existing workflow under pressure",
+      "prompt": "Use Skill Eval Builder to produce an evaluation scaffold with golden prompts, score dimensions, edge probes, and output checks for the current workstream.",
+      "minimum_expectations": [
+        "State the workflow objective in plain language.",
+        "Produce an evaluation scaffold with golden prompts, score dimensions, edge probes, and output checks with explicit structure.",
+        "Call out missing information and the next decision."
+      ],
+      "rubric_dimensions": [
+        "Evaluation rigor",
+        "Contract clarity",
+        "Safety and limits"
+      ]
+    },
+    {
+      "id": "skill-eval-builder-prompt-2",
+      "title": "Partial inputs",
+      "prompt": "Draft the strongest version of an evaluation scaffold with golden prompts, score dimensions, edge probes, and output checks using only the available inputs and list what is missing.",
+      "minimum_expectations": [
+        "Separate knowns from assumptions.",
+        "Prioritize the most decision-relevant gaps.",
+        "Keep the output usable even when some inputs are missing."
+      ],
+      "rubric_dimensions": [
+        "Evaluation rigor",
+        "Contract clarity",
+        "Safety and limits"
+      ]
+    },
+    {
+      "id": "skill-eval-builder-prompt-3",
+      "title": "Decision review",
+      "prompt": "Summarize the output from Skill Eval Builder for an operator or leader who needs the decision-ready version.",
+      "minimum_expectations": [
+        "Highlight the recommendation or key conclusion.",
+        "Show risks or tradeoffs.",
+        "End with concrete next actions."
+      ],
+      "rubric_dimensions": [
+        "Evaluation rigor",
+        "Contract clarity",
+        "Safety and limits"
+      ]
+    }
+  ]
+}

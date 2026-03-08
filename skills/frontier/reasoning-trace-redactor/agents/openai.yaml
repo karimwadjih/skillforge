@@ -1,0 +1,27 @@
+version: 1
+skill:
+  name: Reasoning Trace Redactor
+  slug: reasoning-trace-redactor
+  category: frontier
+  maturity: scaffold
+  description: Use when internal reasoning or sensitive process notes need a cleaner sharing boundary.
+  triggers:
+    - A team wants to share an analysis artifact without exposing sensitive internal traces.
+    - Reasoning or review notes need a structured redaction pass.
+  expected_inputs:
+    - artifact to redact
+    - sharing audience
+    - sensitivity concerns
+  expected_outputs:
+    - redaction plan
+    - safe-share artifact notes
+    - risk warnings
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

@@ -1,0 +1,30 @@
+version: 1
+skill:
+  name: Runbook Author
+  slug: runbook-author
+  category: docs
+  maturity: frontier
+  description: Use when procedural knowledge needs to be survivable during real operating pressure, not just documented.
+  triggers:
+    - A procedure matters enough operationally that relying on tribal memory is now risky.
+    - An operator-facing workflow needs verification steps, failure containment, and escalation guidance before it is safe to reuse.
+  expected_inputs:
+    - procedure or incident notes
+    - system or environment context
+    - prerequisites and permissions
+    - known failure points
+    - rollback or escalation options
+  expected_outputs:
+    - runbook draft
+    - step-by-step procedure
+    - verification checks
+    - rollback and escalation notes
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

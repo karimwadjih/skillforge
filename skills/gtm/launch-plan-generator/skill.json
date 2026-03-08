@@ -1,0 +1,33 @@
+{
+  "slug": "launch-plan-generator",
+  "category": "gtm",
+  "maturity": "frontier",
+  "summary": "Build a practical launch plan with sequencing, owners, messaging dependencies, and readiness checks.",
+  "triggers": [
+    "A launch needs a coordinated GTM plan across functions.",
+    "A team needs a launch artifact with sequencing, dependencies, and readiness logic."
+  ],
+  "expected_inputs": [
+    "launch objective",
+    "audience",
+    "timeline",
+    "channels",
+    "constraints"
+  ],
+  "expected_outputs": [
+    "launch plan",
+    "owner map",
+    "dependency list",
+    "readiness checkpoints"
+  ],
+  "evaluation_status": "benchmarked",
+  "tags": [
+    "gtm",
+    "launch",
+    "planning",
+    "flagship"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

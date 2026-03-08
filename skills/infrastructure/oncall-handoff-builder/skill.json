@@ -1,0 +1,31 @@
+{
+  "slug": "oncall-handoff-builder",
+  "category": "infrastructure",
+  "maturity": "frontier",
+  "summary": "Build an on-call handoff that captures current issues, watch items, and operating context.",
+  "triggers": [
+    "An on-call shift handoff needs a stronger summary.",
+    "Operators need to transfer current context, risks, and watch items."
+  ],
+  "expected_inputs": [
+    "current incidents",
+    "watch items",
+    "pending changes",
+    "operator notes"
+  ],
+  "expected_outputs": [
+    "handoff brief",
+    "watch list",
+    "risks",
+    "follow-up notes"
+  ],
+  "evaluation_status": "sampled",
+  "tags": [
+    "infrastructure",
+    "oncall",
+    "handoff"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

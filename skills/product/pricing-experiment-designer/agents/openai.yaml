@@ -1,0 +1,28 @@
+version: 1
+skill:
+  name: Pricing Experiment Designer
+  slug: pricing-experiment-designer
+  category: product
+  maturity: experimental
+  description: Use when pricing ideas need an experiment plan instead of a vague test suggestion.
+  triggers:
+    - A team wants to test pricing without creating avoidable operational risk.
+    - Pricing discussion needs a structured experiment design.
+  expected_inputs:
+    - pricing hypothesis
+    - customer segment
+    - constraints
+    - guardrails
+  expected_outputs:
+    - experiment plan
+    - success thresholds
+    - risk notes
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

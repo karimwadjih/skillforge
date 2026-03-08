@@ -1,0 +1,28 @@
+version: 1
+skill:
+  name: Opportunity Solution Tree
+  slug: opportunity-solution-tree
+  category: product
+  maturity: experimental
+  description: Use when product discovery needs a clearer map from outcomes to opportunities and solutions.
+  triggers:
+    - The team wants to connect a product goal to candidate discovery paths.
+    - Discovery conversations need more structure than a backlog list.
+  expected_inputs:
+    - goal
+    - known opportunities
+    - candidate ideas
+    - constraints
+  expected_outputs:
+    - opportunity tree
+    - assumption notes
+    - discovery next steps
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

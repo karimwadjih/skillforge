@@ -1,0 +1,51 @@
+{
+  "slug": "repo-onboarding",
+  "maturity": "certified",
+  "prompts": [
+    {
+      "id": "repo-onboarding-prompt-1",
+      "title": "New engineer first week",
+      "prompt": "Read the repository structure, manifests, configs, and existing docs, then produce a repo onboarding brief.",
+      "minimum_expectations": [
+        "List the setup sequence in the correct order.",
+        "Explain the major folders and runtime boundaries.",
+        "Suggest the safest first contribution areas and what is still unclear."
+      ],
+      "rubric_dimensions": [
+        "Technical accuracy",
+        "Actionability",
+        "Change awareness"
+      ]
+    },
+    {
+      "id": "repo-onboarding-prompt-2",
+      "title": "Cross-team handoff",
+      "prompt": "Create a repo onboarding brief focused on service ownership transfer, risks, and operating habits.",
+      "minimum_expectations": [
+        "Highlight commands, environments, and deployment touchpoints.",
+        "Flag hidden dependencies and unusual local setup steps.",
+        "State the high-risk areas that need direct human follow-up."
+      ],
+      "rubric_dimensions": [
+        "Technical accuracy",
+        "Actionability",
+        "Change awareness"
+      ]
+    },
+    {
+      "id": "repo-onboarding-prompt-3",
+      "title": "Open-source contributor guide",
+      "prompt": "Produce an onboarding brief for a prospective contributor that explains the project shape, contribution path, and repo conventions.",
+      "minimum_expectations": [
+        "Differentiate maintainer concerns from contributor concerns.",
+        "Recommend a first reading path through the repo.",
+        "End with a concrete first-task shortlist."
+      ],
+      "rubric_dimensions": [
+        "Technical accuracy",
+        "Actionability",
+        "Change awareness"
+      ]
+    }
+  ]
+}

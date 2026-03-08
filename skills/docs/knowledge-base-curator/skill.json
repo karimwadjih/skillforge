@@ -1,0 +1,29 @@
+{
+  "slug": "knowledge-base-curator",
+  "category": "docs",
+  "maturity": "experimental",
+  "summary": "Curate a knowledge base by grouping, pruning, and clarifying article sets.",
+  "triggers": [
+    "A knowledge base needs structure and cleanup.",
+    "Support or enablement content is difficult to navigate."
+  ],
+  "expected_inputs": [
+    "article set",
+    "audience",
+    "content problems"
+  ],
+  "expected_outputs": [
+    "curation plan",
+    "article grouping",
+    "cleanup recommendations"
+  ],
+  "evaluation_status": "unbenchmarked",
+  "tags": [
+    "docs",
+    "knowledge-base",
+    "curation"
+  ],
+  "maintainers": [
+    "skillforge-maintainers"
+  ]
+}

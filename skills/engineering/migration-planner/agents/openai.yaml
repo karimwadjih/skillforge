@@ -1,0 +1,29 @@
+version: 1
+skill:
+  name: Migration Planner
+  slug: migration-planner
+  category: engineering
+  maturity: frontier
+  description: Use when a migration is inevitable and the team needs a written plan rather than a loose set of tasks.
+  triggers:
+    - A system, library, or data migration needs a staged plan.
+    - The migration risk is high enough that sequencing must be explicit.
+  expected_inputs:
+    - migration target
+    - current state
+    - constraints
+    - dependencies
+  expected_outputs:
+    - migration plan
+    - dependency map
+    - risk list
+    - rollback notes
+execution:
+  default_behavior:
+    - Ask for missing critical inputs only when they materially change the output.
+    - Produce a structured artifact with explicit assumptions.
+    - Preserve uncertainty rather than smoothing it over.
+guardrails:
+  - Do not invent evidence.
+  - Distinguish facts from inference.
+  - Match the maturity expectations of the skill.

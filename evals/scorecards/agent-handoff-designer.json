@@ -1,0 +1,26 @@
+{
+  "slug": "agent-handoff-designer",
+  "category": "frontier",
+  "maturity": "experimental",
+  "tier": "seeded",
+  "total": 85,
+  "breakdown": {
+    "structure": 30,
+    "metadata": 20,
+    "content": 16,
+    "rubric": 10,
+    "tests": 9
+  },
+  "counts": {
+    "examples": 1,
+    "edgeCases": 3,
+    "tests": 3,
+    "rubricCriteria": 3,
+    "benchmarkAssets": 0
+  },
+  "benchmarkCovered": false,
+  "certificationEligible": false,
+  "recommendations": [
+    "Add more realistic examples to strengthen reuse and evaluation coverage."
+  ]
+}
