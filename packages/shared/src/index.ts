@@ -291,11 +291,13 @@ export async function loadSkill(skillDir: string, root = findRepoRoot()): Promis
 }
 
 export async function listSkillDirectories(root = findRepoRoot()): Promise<string[]> {
-  return fg("skills/*/*", {
+  const directories = await fg("skills/*/*", {
     cwd: root,
     absolute: true,
     onlyDirectories: true
   });
+
+  return directories.sort((left, right) => left.localeCompare(right));
 }
 
 export async function loadAllSkills(root = findRepoRoot()): Promise<LoadedSkill[]> {

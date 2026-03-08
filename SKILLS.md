@@ -27,17 +27,17 @@ Skillforge distinguishes seeded breadth from developed depth. Do not assume the 
 ## Flagship Skills
 
 - `architecture-explainer` [frontier] - Explain a system or codebase architecture in a way that is grounded, digestible, and useful for future work.
-- `bug-triage` [frontier] - Turn a raw bug report into a triage artifact with severity, repro confidence, likely owners, and next actions.
-- `repo-onboarding` [certified] - Turn an unfamiliar codebase into a fast-start onboarding brief with setup, architecture, and first-task guidance.
-- `skill-eval-builder` [frontier] - Build an evaluation scaffold for a Skill with prompts, scoring dimensions, and failure probes.
-- `launch-plan-generator` [frontier] - Build a practical launch plan with sequencing, owners, messaging dependencies, and readiness checks.
-- `workflow-compiler` [frontier] - Compile a human workflow into a reusable, explicit skill package with steps, inputs, outputs, and failure handling.
-- `executive-meeting-prep` [frontier] - Prepare a leadership meeting brief with objectives, decisions, risks, and likely questions.
-- `weekly-ops-update` [frontier] - Build a weekly operating update that highlights signal, risk, and follow-ups without reading like status spam.
-- `customer-interview-synthesizer` [frontier] - Turn multiple customer interviews into a synthesis with themes, tensions, and product implications.
-- `prd-critic` [frontier] - Critique a product requirements document for clarity, scope, risk, and execution readiness.
 - `benchmark-brief` [frontier] - Create a concise benchmark brief that explains what is being measured, how it is scored, and how to interpret the results.
+- `bug-triage` [frontier] - Turn a raw bug report into a triage artifact with severity, repro confidence, likely owners, and next actions.
+- `customer-interview-synthesizer` [frontier] - Turn multiple customer interviews into a synthesis with themes, tensions, and product implications.
+- `executive-meeting-prep` [frontier] - Prepare a leadership meeting brief with objectives, decisions, risks, and likely questions.
+- `launch-plan-generator` [frontier] - Build a practical launch plan with sequencing, owners, messaging dependencies, and readiness checks.
+- `prd-critic` [frontier] - Critique a product requirements document for clarity, scope, risk, and execution readiness.
+- `repo-onboarding` [certified] - Turn an unfamiliar codebase into a fast-start onboarding brief with setup, architecture, and first-task guidance.
 - `research-dossier` [certified] - Turn scattered research inputs into a decision-ready dossier with evidence, themes, and unresolved questions.
+- `skill-eval-builder` [frontier] - Build an evaluation scaffold for a Skill with prompts, scoring dimensions, and failure probes.
+- `weekly-ops-update` [frontier] - Build a weekly operating update that highlights signal, risk, and follow-ups without reading like status spam.
+- `workflow-compiler` [frontier] - Compile a human workflow into a reusable, explicit skill package with steps, inputs, outputs, and failure handling.
 
 ## Collections
 

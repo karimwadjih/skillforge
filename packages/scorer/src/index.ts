@@ -165,6 +165,14 @@ function collectRecommendations(card: SkillScorecard): string[] {
   return recommendations;
 }
 
+function compareScorecards(left: SkillScorecard, right: SkillScorecard) {
+  return (
+    right.total - left.total ||
+    left.category.localeCompare(right.category) ||
+    left.slug.localeCompare(right.slug)
+  );
+}
+
 export async function scoreAllSkills(root = findRepoRoot()): Promise<SkillScorecard[]> {
   const seedData = await loadSeedData(root);
   const seedMap = new Map(seedData.skills.map((skill) => [skill.slug, skill]));
@@ -225,14 +233,13 @@ export async function scoreAllSkills(root = findRepoRoot()): Promise<SkillScorec
     return card;
   });
 
-  return cards.sort((left, right) => right.total - left.total);
+  return cards.sort(compareScorecards);
 }
 
 export async function writeScorecards(root = findRepoRoot()) {
   const cards = await scoreAllSkills(root);
   const paths = repoPaths(root);
   const summary = {
-    generated_at: new Date().toISOString(),
     totals: {
       skills: cards.length,
       certifiedEligible: cards.filter((card) => card.certificationEligible).length

@@ -1,4 +1,7 @@
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "vitest/config";
+
+const fromRepoRoot = (value: string) => fileURLToPath(new URL(value, import.meta.url));
 
 export default defineConfig({
   test: {
@@ -7,14 +10,14 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@skillforge/shared": "/Users/karimwadjih/skillforge/packages/shared/src/index.ts",
-      "@skillforge/catalog": "/Users/karimwadjih/skillforge/packages/catalog/src/index.ts",
-      "@skillforge/ui": "/Users/karimwadjih/skillforge/packages/ui/src/index.tsx",
-      "@skillforge/ui/styles.css": "/Users/karimwadjih/skillforge/packages/ui/src/styles.css",
-      "@skillforge/validator": "/Users/karimwadjih/skillforge/packages/validator/src/index.ts",
-      "@skillforge/scorer": "/Users/karimwadjih/skillforge/packages/scorer/src/index.ts",
-      "@skillforge/packager": "/Users/karimwadjih/skillforge/packages/packager/src/index.ts",
-      "@skillforge/indexer": "/Users/karimwadjih/skillforge/packages/indexer/src/index.ts"
+      "@skillforge/shared": fromRepoRoot("./packages/shared/src/index.ts"),
+      "@skillforge/catalog": fromRepoRoot("./packages/catalog/src/index.ts"),
+      "@skillforge/ui": fromRepoRoot("./packages/ui/src/index.tsx"),
+      "@skillforge/ui/styles.css": fromRepoRoot("./packages/ui/src/styles.css"),
+      "@skillforge/validator": fromRepoRoot("./packages/validator/src/index.ts"),
+      "@skillforge/scorer": fromRepoRoot("./packages/scorer/src/index.ts"),
+      "@skillforge/packager": fromRepoRoot("./packages/packager/src/index.ts"),
+      "@skillforge/indexer": fromRepoRoot("./packages/indexer/src/index.ts")
     }
   }
 });

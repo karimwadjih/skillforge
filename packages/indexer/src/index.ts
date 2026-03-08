@@ -59,6 +59,22 @@ const categoryDescriptions: Record<string, string> = {
   research: "Research synthesis, evidence quality, competitor analysis, and benchmark interpretation workflows."
 };
 
+function compareCatalogSkills(left: CatalogSkill, right: CatalogSkill) {
+  return (
+    left.category.localeCompare(right.category) ||
+    left.name.localeCompare(right.name) ||
+    left.slug.localeCompare(right.slug)
+  );
+}
+
+function compareFlagships(left: CatalogSkill, right: CatalogSkill) {
+  return (
+    right.score - left.score ||
+    left.name.localeCompare(right.name) ||
+    left.slug.localeCompare(right.slug)
+  );
+}
+
 function renderSkillsIndex(
   summary: {
     totalSkills: number;
@@ -76,7 +92,7 @@ function renderSkillsIndex(
   }>
 ) {
   const flagshipRows = flagships
-    .sort((left, right) => right.score - left.score)
+    .sort(compareFlagships)
     .map((skill) => `- \`${skill.slug}\` [${skill.maturity}] - ${skill.summary}`)
     .join("\n");
 
@@ -195,12 +211,12 @@ export async function generateCatalog(root = findRepoRoot()) {
         openai_yaml: skill.content["agents/openai.yaml"]
       }
     };
-  });
+  }).sort(compareCatalogSkills);
 
   const byCategory = Object.fromEntries(
     Array.from(new Set(catalogSkills.map((skill) => skill.category))).map((category) => [
       category,
-      catalogSkills.filter((skill) => skill.category === category)
+      catalogSkills.filter((skill) => skill.category === category).sort(compareCatalogSkills)
     ])
   );
 
@@ -209,7 +225,7 @@ export async function generateCatalog(root = findRepoRoot()) {
     skills: compact(collection.included_skills.map((slug) => catalogSkills.find((skill) => skill.slug === slug)))
   }));
 
-  const flagships = catalogSkills.filter((skill) => skill.tier === "flagship");
+  const flagships = catalogSkills.filter((skill) => skill.tier === "flagship").sort(compareFlagships);
   const summary = {
     totalSkills: catalogSkills.length,
     developedCount: catalogSkills.filter((skill) => skill.tier !== "seeded").length,
