@@ -6,7 +6,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start"
+    "start": "node .next/standalone/apps/docs/server.js"
   },
   "dependencies": {
     "@skillforge/catalog": "workspace:*",

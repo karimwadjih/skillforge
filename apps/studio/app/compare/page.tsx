@@ -11,7 +11,7 @@ export default async function ComparePage() {
       <Hero
         kicker="Compare"
         title="Compare the contracts and judgment layers, not just the names."
-        subtitle="The compare surface is intentionally narrow: metadata, rubric posture, and examples/tests. That is enough to tell whether two Skills genuinely differ or just use different wording."
+        subtitle="The compare surface is intentionally narrow: metadata, rubric posture, and examples/tests. That is enough to tell whether two skills genuinely differ or just reuse the same shape with different wording."
       />
       <CompareView skills={catalog} />
     </StudioShell>

@@ -106,8 +106,13 @@ ${summary}
 
   return (
     <Panel style={{ marginTop: 24 }}>
-      <h2>Starter Skill Generator</h2>
-      <p className="sf-text-muted">Generate a minimal `SKILL.md`, `skill.json`, and starter bundle entirely client-side. This is for scaffolding, not for pretending a new Skill is production-ready on day one.</p>
+      <div className="sf-section-head">
+        <div className="sf-section-copy">
+          <div className="sf-kicker">Starter Generator</div>
+          <h2>Export a clean scaffold, not a fake finished skill.</h2>
+          <p className="sf-text-muted">Generate a minimal `SKILL.md`, `skill.json`, and starter bundle entirely client-side. This is for scaffolding, not for pretending a new skill is production-ready on day one.</p>
+        </div>
+      </div>
       <div className="sf-form">
         <div className="sf-form-row">
           <input className="sf-input" value={name} onChange={(event) => setName(event.target.value)} placeholder="Skill name" />
@@ -139,7 +144,7 @@ ${summary}
         <Badge label={category} />
         <Badge label={maturity} tone={maturity as "frontier" | "experimental" | "scaffold"} />
       </div>
-      <div className="sf-toolbar">
+      <div className="sf-actions-row">
         <button className="sf-button sf-button-primary" onClick={downloadZip}>
           Download starter zip
         </button>

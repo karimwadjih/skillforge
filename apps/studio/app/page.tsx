@@ -12,8 +12,8 @@ export default async function StudioHomePage() {
     <StudioShell>
       <Hero
         kicker="Studio"
-        title="Browse the library, inspect the evidence, and scaffold new work."
-        subtitle="The studio stays intentionally constrained in v1: browse/filter, detail views, basic compare mode, and starter-skill generation. The goal is useful product surface, not a fake internal platform."
+        title="Inspect the library, compare judgment layers, and scaffold clean starting points."
+        subtitle="The studio stays intentionally narrow in v1: browse/filter, evidence-rich detail views, basic compare mode, and starter-skill generation. The goal is a useful public surface, not a fake internal platform."
         aside={
           <>
             <StatCard label="Skills" value={summary.totalSkills} note="Pulled from the generated catalog." />

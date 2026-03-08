@@ -19,7 +19,7 @@ export function AppShell({
         <nav className="sf-nav">{nav}</nav>
         {children}
         <footer className="sf-footer">
-          Skillforge treats Skills like software: portable, reviewable, benchmark-aware, and explicit about what has and has not earned trust.
+          Portable skill packages with visible standards, review posture, and maturity labels that mean what they say.
         </footer>
       </div>
     </div>
@@ -139,17 +139,20 @@ export function SkillCard({
 }) {
   return (
     <a href={href} className="sf-card">
-      <div className="sf-badges">
-        <Badge label={maturity} tone={maturity as "certified" | "frontier" | "experimental" | "scaffold"} />
-        <Badge label={tier} />
+      <div className="sf-card-top">
+        <div className="sf-badges">
+          <Badge label={maturity} tone={maturity as "certified" | "frontier" | "experimental" | "scaffold"} />
+          <Badge label={tier} />
+        </div>
+        <span className="sf-card-score">Score {score}</span>
       </div>
       <div>
         <h3>{name}</h3>
         <p>{summary}</p>
       </div>
       <div className="sf-card-meta">
-        <span>{category}</span>
-        <span>Score {score}</span>
+        <span className="sf-card-category">{category}</span>
+        <span>Open skill</span>
       </div>
     </a>
   );
@@ -173,23 +176,25 @@ export function CompareTable({
   }>;
 }) {
   return (
-    <table className="sf-compare-table">
-      <thead>
-        <tr>
-          <th>Field</th>
-          <th>Left</th>
-          <th>Right</th>
-        </tr>
-      </thead>
-      <tbody>
-        {rows.map((row) => (
-          <tr key={row.label}>
-            <td>{row.label}</td>
-            <td>{row.left}</td>
-            <td>{row.right}</td>
+    <div className="sf-compare-scroll">
+      <table className="sf-compare-table">
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Left</th>
+            <th>Right</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {rows.map((row) => (
+            <tr key={row.label}>
+              <td>{row.label}</td>
+              <td>{row.left}</td>
+              <td>{row.right}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }

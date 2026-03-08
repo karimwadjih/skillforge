@@ -17,6 +17,10 @@ Captured from the local docs and studio apps on March 8, 2026.
 - [`screenshots/studio-repo-onboarding-real.png`](./screenshots/studio-repo-onboarding-real.png)
 - [`screenshots/studio-customer-interview-synthesizer-real.png`](./screenshots/studio-customer-interview-synthesizer-real.png)
 
+## Launch asset
+
+- [`social-preview.png`](./social-preview.png)
+
 ## Demo-ready flows
 
 - [`example-runs/prd-critic-demo-flow.md`](./example-runs/prd-critic-demo-flow.md)

@@ -58,6 +58,10 @@ Additional runtime captures:
 - [`docs-flagships-real.png`](./showcase/screenshots/docs-flagships-real.png)
 - [`studio-compare-real.png`](./showcase/screenshots/studio-compare-real.png)
 
+Launch assets:
+
+- [`showcase/social-preview.png`](./showcase/social-preview.png)
+
 Demo-ready flows:
 
 - [`showcase/example-runs/prd-critic-demo-flow.md`](./showcase/example-runs/prd-critic-demo-flow.md)

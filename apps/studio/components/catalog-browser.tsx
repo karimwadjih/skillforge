@@ -25,9 +25,19 @@ export function CatalogBrowser({ skills }: { skills: CatalogSkill[] }) {
 
   return (
     <Panel style={{ marginTop: 24 }}>
-      <h2>Catalog Browser</h2>
-      <p className="sf-note">Search by workflow name, trigger, summary, tag, or expected output. Results are sorted by tier depth first, then score.</p>
-      <div className="sf-toolbar">
+      <div className="sf-section-head">
+        <div className="sf-section-copy">
+          <div className="sf-kicker">Catalog Browser</div>
+          <h2>Filter the library by actual workflow signals.</h2>
+          <p className="sf-note">Search by workflow name, trigger, summary, tag, or expected output. Results are sorted by tier depth first, then score.</p>
+        </div>
+      </div>
+      <div className="sf-badges" style={{ marginBottom: 18 }}>
+        <Badge label={`${filtered.length} visible`} />
+        <Badge label={`${skills.filter((skill) => skill.tier === "flagship").length} flagships`} />
+        <Badge label={`${skills.filter((skill) => skill.maturity === "certified").length} certified`} />
+      </div>
+      <div className="sf-filter-grid">
         <input className="sf-input" placeholder="Search skills, summaries, or tags" value={query} onChange={(event) => setQuery(event.target.value)} />
         <select className="sf-select" value={category} onChange={(event) => setCategory(event.target.value)}>
           <option value="all">All categories</option>
@@ -45,12 +55,6 @@ export function CatalogBrowser({ skills }: { skills: CatalogSkill[] }) {
             </option>
           ))}
         </select>
-      </div>
-
-      <div className="sf-badges" style={{ marginBottom: 18 }}>
-        <Badge label={`${filtered.length} visible`} />
-        <Badge label={`${skills.filter((skill) => skill.tier === "flagship").length} flagships`} />
-        <Badge label={`${skills.filter((skill) => skill.maturity === "certified").length} certified`} />
       </div>
 
       {filtered.length === 0 ? (

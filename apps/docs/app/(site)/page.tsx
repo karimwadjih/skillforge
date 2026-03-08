@@ -23,46 +23,72 @@ export default async function HomePage() {
         }
       />
 
-      <div className="sf-grid sf-grid-3" style={{ marginTop: 24 }}>
-        <Panel>
-          <h2>Use it today</h2>
-          <p>Start with the flagship tier if you want the fastest proof that Skillforge is useful. Those skills are the sharpest public assets in the repo.</p>
-          <div className="sf-link-list">
-            <a href="/flagships">Browse the flagship layer</a>
-            <a href="/library">Scan the full library</a>
+      <section className="sf-section">
+        <div className="sf-section-head">
+          <div className="sf-section-copy">
+            <div className="sf-kicker">Start Here</div>
+            <h2>The fastest way to understand the project.</h2>
+            <p className="sf-note">
+              Skillforge is broad, but it should still be easy to know what to trust first, what to browse next, and what is intentionally unfinished.
+            </p>
           </div>
-        </Panel>
-        <Panel>
-          <h2>Read the quality labels correctly</h2>
-          <p>`frontier` means strong. `certified` means stronger, benchmark-covered, and manually reviewed. Skillforge does not blur that distinction for marketing.</p>
-          <div className="sf-link-list">
-            <a href="/benchmark-methodology">Review the benchmark posture</a>
-            <a href="/contributing">See the contribution bar</a>
-          </div>
-        </Panel>
-        <Panel>
-          <h2>Start from a pack, not a blank page</h2>
-          <p>Collections bundle Skills by role so a founder, product lead, or eng manager can find a credible starting set quickly.</p>
-          <div className="sf-link-list">
-            <a href="/collections">Browse curated collections</a>
-            <a href="/getting-started">Follow the getting started flow</a>
-          </div>
-        </Panel>
-      </div>
+        </div>
+        <div className="sf-grid sf-grid-3">
+          <Panel>
+            <h2>Use it today</h2>
+            <p>Start with the flagship tier if you want the fastest proof that Skillforge is useful. Those skills are the sharpest public assets in the repo.</p>
+            <div className="sf-link-list">
+              <a href="/flagships">Browse the flagship layer</a>
+              <a href="/library">Scan the full library</a>
+            </div>
+          </Panel>
+          <Panel>
+            <h2>Read the quality labels correctly</h2>
+            <p>`frontier` means strong. `certified` means stronger, benchmark-covered, and manually reviewed. Skillforge does not blur that distinction for marketing.</p>
+            <div className="sf-link-list">
+              <a href="/benchmark-methodology">Review the benchmark posture</a>
+              <a href="/contributing">See the contribution bar</a>
+            </div>
+          </Panel>
+          <Panel>
+            <h2>Start from a pack, not a blank page</h2>
+            <p>Collections bundle Skills by role so a founder, product lead, or eng manager can find a credible starting set quickly.</p>
+            <div className="sf-link-list">
+              <a href="/collections">Browse curated collections</a>
+              <a href="/getting-started">Follow the getting started flow</a>
+            </div>
+          </Panel>
+        </div>
+      </section>
 
-      <section style={{ marginTop: 28 }}>
-        <div className="sf-kicker">Showcase</div>
+      <section className="sf-section">
+        <div className="sf-section-head">
+          <div className="sf-section-copy">
+            <div className="sf-kicker">Showcase</div>
+            <h2>Actual surfaces, not product theater.</h2>
+            <p className="sf-note">
+              These captures come from the real docs and studio apps. The visuals should make the product easier to trust, not easier to fake.
+            </p>
+          </div>
+        </div>
         <div className="sf-showcase-grid">
           <Panel className="sf-showcase-frame">
             <img alt="Skillforge flagship page screenshot" src="/showcase/docs-flagships-real.png" />
+            <h2>Docs built for inspection</h2>
+            <p className="sf-note">The docs surface quality tiers, certification posture, and real skill depth instead of hiding behind generic marketing language.</p>
+            <div className="sf-link-list">
+              <a href="/flagships">Browse flagship skills</a>
+            </div>
           </Panel>
           <Panel className="sf-showcase-frame">
             <img alt="Skillforge studio homepage screenshot" src="/showcase/studio-home-real.png" />
+            <h2>Studio built for comparison</h2>
+            <p className="sf-note">The studio is intentionally narrow. It helps you inspect a skill contract, compare assets, and export a clean starter scaffold.</p>
+            <div className="sf-link-list">
+              <a href="/skills/prd-critic">Inspect the `prd-critic` skill page</a>
+            </div>
           </Panel>
         </div>
-        <p className="sf-note" style={{ marginTop: 12 }}>
-          Runtime screenshots captured from the local docs and studio apps on March 8, 2026. Skillforge shows the real surfaces, not fake product art.
-        </p>
         <div className="sf-link-list" style={{ marginTop: 12 }}>
           <a href="/flagships">See the flagship layer</a>
           <a href="/skills/prd-critic">Open `prd-critic`</a>
@@ -71,8 +97,14 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section style={{ marginTop: 28 }}>
-        <div className="sf-kicker">Demo Flows</div>
+      <section className="sf-section">
+        <div className="sf-section-head">
+          <div className="sf-section-copy">
+            <div className="sf-kicker">Demo Flows</div>
+            <h2>Three clean first demos.</h2>
+            <p className="sf-note">Each one proves a different kind of value: critique quality, repository orientation, and evidence handling.</p>
+          </div>
+        </div>
         <div className="sf-grid sf-grid-3">
           <Panel className="sf-showcase-frame">
             <img alt="Studio view for PRD Critic" src="/showcase/studio-prd-critic-real.png" />
@@ -95,8 +127,14 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section style={{ marginTop: 28 }}>
-        <div className="sf-kicker">Featured Flagships</div>
+      <section className="sf-section">
+        <div className="sf-section-head">
+          <div className="sf-section-copy">
+            <div className="sf-kicker">Featured Flagships</div>
+            <h2>Where to start if you want the strongest public assets.</h2>
+            <p className="sf-note">These are the skills that best show workflow judgment, review posture, and reusable structure without pretending the entire library is equally mature.</p>
+          </div>
+        </div>
         <div className="sf-grid sf-grid-3">
           {flagships.map((skill) => (
             <SkillCard
@@ -113,8 +151,14 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section style={{ marginTop: 28 }}>
-        <div className="sf-kicker">Collections</div>
+      <section className="sf-section">
+        <div className="sf-section-head">
+          <div className="sf-section-copy">
+            <div className="sf-kicker">Collections</div>
+            <h2>Role-based starting points with cleaner context.</h2>
+            <p className="sf-note">Packs keep the first pass practical. They group strong starting skills without over-claiming that one bundle solves an entire function.</p>
+          </div>
+        </div>
         <div className="sf-grid sf-grid-3">
           {collections.map((collection) => (
             <Panel key={collection.slug}>
@@ -134,7 +178,7 @@ export default async function HomePage() {
       </section>
 
       {certified.length > 0 ? (
-        <section style={{ marginTop: 28 }}>
+        <section className="sf-section">
           <div className="sf-kicker">Certified Now</div>
           <Panel>
             <p>

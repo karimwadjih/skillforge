@@ -28,19 +28,25 @@ export function SkillDetailTabs({ skill }: { skill: CatalogSkill }) {
 
   return (
     <Panel style={{ marginTop: 24 }}>
-      <div className="sf-badges" style={{ marginBottom: 18 }}>
-        <Badge label={skill.maturity} tone={skill.maturity as "certified" | "frontier" | "experimental" | "scaffold"} />
-        <Badge label={skill.tier} />
-        <Badge label={`Score ${skill.score}`} />
-        <Badge label={`${skill.counts.examples} examples`} />
-        <Badge label={`${skill.counts.tests} tests`} />
-        <Badge label={skill.benchmark_covered ? "benchmark assets" : "no benchmark assets"} />
+      <div className="sf-section-head">
+        <div className="sf-section-copy">
+          <div className="sf-kicker">Evidence View</div>
+          <h2>Inspect the skill before you reuse it.</h2>
+          <p className="sf-note">
+            {skill.certification_eligible
+              ? "This skill currently clears the public certification gates."
+              : "This skill may still be strong, but it has not yet cleared the public certification gates."}
+          </p>
+        </div>
+        <div className="sf-badges">
+          <Badge label={skill.maturity} tone={skill.maturity as "certified" | "frontier" | "experimental" | "scaffold"} />
+          <Badge label={skill.tier} />
+          <Badge label={`Score ${skill.score}`} />
+          <Badge label={`${skill.counts.examples} examples`} />
+          <Badge label={`${skill.counts.tests} tests`} />
+          <Badge label={skill.benchmark_covered ? "benchmark assets" : "no benchmark assets"} />
+        </div>
       </div>
-      <p className="sf-note" style={{ marginBottom: 18 }}>
-        {skill.certification_eligible
-          ? "This skill is eligible for certification under the current policy."
-          : "This skill may still be strong, but it has not yet cleared the public certification gates."}
-      </p>
       <div className="sf-tabbar">
         {tabs.map((item) => (
           <button key={item.id} className={cx("sf-pill", tab === item.id && "sf-pill-active")} onClick={() => setTab(item.id)}>
@@ -48,7 +54,9 @@ export function SkillDetailTabs({ skill }: { skill: CatalogSkill }) {
           </button>
         ))}
       </div>
-      <MarkdownArticle source={source} />
+      <div className="sf-content-surface">
+        <MarkdownArticle source={source} />
+      </div>
     </Panel>
   );
 }

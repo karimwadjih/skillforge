@@ -1,0 +1,14 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="640" fill="#020202" />
+  <g>
+    <text x="640" y="338" text-anchor="middle" fill="#F5F5F7" font-family="'Helvetica Neue', Arial, sans-serif" font-size="102" font-weight="700" letter-spacing="-0.04em">
+      SKILLFORGE
+    </text>
+    <text x="640" y="410" text-anchor="middle" fill="#E6E7EA" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="500">
+      Production-grade Skills for ChatGPT and Codex
+    </text>
+    <text x="640" y="468" text-anchor="middle" fill="#BFC3CB" font-family="'SFMono-Regular', 'Menlo', 'Consolas', monospace" font-size="20" font-weight="500" letter-spacing="0.02em">
+      60 skills · 12 flagships · docs + studio
+    </text>
+  </g>
+</svg>

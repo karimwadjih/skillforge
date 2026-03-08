@@ -1287,14 +1287,6 @@ async function main() {
   await writeText(join(templatesRoot, "benchmark-template", "case.json"), `${templates.benchmarkTemplate}\n`);
 
   await writeTextIfMissing(
-    join(showcaseRoot, "screenshots", "docs-home-preview.svg"),
-    renderShowcaseSvg("Docs Home Preview", "Reference preview for docs layout coverage", "#85c4ff")
-  );
-  await writeTextIfMissing(
-    join(showcaseRoot, "screenshots", "studio-preview.svg"),
-    renderShowcaseSvg("Studio Preview", "Reference preview for catalog browsing and compare mode", "#ffd071")
-  );
-  await writeTextIfMissing(
     join(showcaseRoot, "example-runs", "README.md"),
     "# Example Runs\n\nStore authored before/after artifacts and demo-ready flows here.\n"
   );
