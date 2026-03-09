@@ -7,6 +7,14 @@ function stripHeading(source: string) {
   return source.replace(/^# .+\n\n/, "");
 }
 
+function renderReviewDepth(skill: {
+  counts: { examples: number; tests: number };
+  benchmark_covered: boolean;
+}) {
+  const benchmarkNote = skill.benchmark_covered ? "benchmark assets present" : "no benchmark assets";
+  return `${skill.counts.examples} examples, ${skill.counts.tests} tests, ${benchmarkNote}`;
+}
+
 export async function generateStaticParams() {
   const catalog = await getCatalog();
   return catalog.map((skill) => ({ slug: skill.slug }));
@@ -54,36 +62,57 @@ export default async function DocsSkillPage({
                   ? "This is a flagship skill. It is intentionally stronger than the broader library, but flagship status is not the same as certification."
                   : "This skill sits below the flagship tier. Read the maturity label literally and inspect the evidence before you reuse it."}
             </p>
-            <MarkdownArticle source={stripHeading(skill.content.readme)} />
+            <ul className="sf-fact-list">
+              <li className="sf-fact-item">
+                <span className="sf-fact-label">Primary trigger</span>
+                <p className="sf-fact-value">{skill.triggers[0]}</p>
+              </li>
+              <li className="sf-fact-item">
+                <span className="sf-fact-label">Review depth</span>
+                <p className="sf-fact-value">{renderReviewDepth(skill)}</p>
+              </li>
+              <li className="sf-fact-item">
+                <span className="sf-fact-label">Expected outputs</span>
+                <ul>
+                  {skill.expected_outputs.slice(0, 3).map((output) => (
+                    <li key={output}>{output}</li>
+                  ))}
+                </ul>
+              </li>
+              <li className="sf-fact-item">
+                <span className="sf-fact-label">Evaluation status</span>
+                <p className="sf-fact-value">{skill.evaluation_status}</p>
+              </li>
+            </ul>
           </Panel>
           <div className="sf-stack">
-            <Panel>
+            <div className="sf-contract-card">
               <div className="sf-kicker">Trigger Surface</div>
-              <h2>When to reach for it</h2>
+              <h3>When to reach for it</h3>
               <ul>
                 {skill.triggers.map((trigger) => (
                   <li key={trigger}>{trigger}</li>
                 ))}
               </ul>
-            </Panel>
-            <Panel>
+            </div>
+            <div className="sf-contract-card">
               <div className="sf-kicker">Inputs</div>
-              <h2>What it expects</h2>
+              <h3>What it expects</h3>
               <ul>
                 {skill.expected_inputs.map((input) => (
                   <li key={input}>{input}</li>
                 ))}
               </ul>
-            </Panel>
-            <Panel>
+            </div>
+            <div className="sf-contract-card">
               <div className="sf-kicker">Outputs</div>
-              <h2>What it should return</h2>
+              <h3>What it should return</h3>
               <ul>
                 {skill.expected_outputs.map((output) => (
                   <li key={output}>{output}</li>
                 ))}
               </ul>
-            </Panel>
+            </div>
           </div>
         </div>
       </section>
@@ -122,6 +151,17 @@ export default async function DocsSkillPage({
             <MarkdownArticle source={`${skill.content.happy_path}\n\n${skill.content.edge_path}\n\n${skill.content.failure_cases}`} />
           </Panel>
         </div>
+      </section>
+      <section className="sf-section">
+        <div className="sf-section-head">
+          <div className="sf-section-copy">
+            <div className="sf-kicker">Full Notes</div>
+            <h2>Complete operating notes.</h2>
+          </div>
+        </div>
+        <Panel>
+          <MarkdownArticle source={stripHeading(skill.content.readme)} />
+        </Panel>
       </section>
     </SiteShell>
   );

@@ -216,6 +216,8 @@ img {
 }
 
 .sf-stat {
+  display: grid;
+  align-content: start;
   gap: 12px;
   min-height: 126px;
 }
@@ -501,14 +503,15 @@ img {
   flex-wrap: wrap;
   gap: 8px;
   padding: 6px;
-  margin: 18px 0 22px;
+  margin: 16px 0 18px;
   border: 1px solid rgba(25, 49, 80, 0.08);
   border-radius: 999px;
   background: rgba(25, 49, 80, 0.05);
 }
 
 .sf-content-surface {
-  padding-top: 6px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(25, 49, 80, 0.08);
 }
 
 .sf-compare-scroll {
@@ -521,6 +524,8 @@ img {
   border-collapse: separate;
   border-spacing: 0;
   font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
   background: rgba(255, 253, 249, 0.88);
   border: 1px solid rgba(25, 49, 80, 0.08);
   border-radius: 24px;
@@ -548,8 +553,11 @@ img {
 }
 
 .sf-compare-table tbody td:first-child {
-  width: 18%;
+  width: 19%;
   color: var(--sf-muted);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .sf-footer {
@@ -680,6 +688,11 @@ img {
   padding-left: 1.05rem;
 }
 
+.sf-summary-panel .sf-fact-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
 .sf-fact-label {
   display: block;
   margin-bottom: 6px;
@@ -713,7 +726,10 @@ img {
 }
 
 .sf-compare-card {
-  padding: 24px;
+  display: grid;
+  gap: 0;
+  min-height: 204px;
+  padding: 28px 30px 24px;
   border-radius: 24px;
   border: 1px solid rgba(25, 49, 80, 0.08);
   background: rgba(255, 253, 249, 0.88);
@@ -727,6 +743,40 @@ img {
   margin: 0;
   color: var(--sf-muted);
   line-height: 1.66;
+}
+
+.sf-compare-list {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sf-compare-list li {
+  position: relative;
+  padding-left: 14px;
+}
+
+.sf-compare-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--sf-accent);
+}
+
+.sf-contract-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.08rem;
+  line-height: 1.12;
+}
+
+.sf-contract-card p {
+  margin: 0;
 }
 
 .sf-actions-row {
@@ -770,6 +820,10 @@ img {
 
   .sf-nav-links {
     justify-content: flex-start;
+  }
+
+  .sf-summary-panel .sf-fact-list {
+    grid-template-columns: 1fr;
   }
 }
 

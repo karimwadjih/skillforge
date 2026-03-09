@@ -36,44 +36,56 @@ export default async function SkillPage({
         }
       />
       <section className="sf-section">
-        <Panel className="sf-summary-panel">
-          <div className="sf-badges" style={{ marginBottom: 18 }}>
-            <Badge label={skill.maturity} tone={skill.maturity as "certified" | "frontier" | "experimental" | "scaffold"} />
-            <Badge label={skill.tier} />
-            <Badge label={skill.evaluation_status} />
+        <div className="sf-split">
+          <Panel className="sf-summary-panel">
+            <div className="sf-badges" style={{ marginBottom: 18 }}>
+              <Badge label={skill.maturity} tone={skill.maturity as "certified" | "frontier" | "experimental" | "scaffold"} />
+              <Badge label={skill.tier} />
+              <Badge label={skill.evaluation_status} />
+            </div>
+            <p className="sf-text-muted">{skill.description}</p>
+            <ul className="sf-fact-list">
+              <li className="sf-fact-item">
+                <span className="sf-fact-label">Primary trigger</span>
+                <p className="sf-fact-value">{skill.triggers[0]}</p>
+              </li>
+              <li className="sf-fact-item">
+                <span className="sf-fact-label">Current review posture</span>
+                <p className="sf-fact-value">
+                  {skill.certification_eligible ? "Clears the public certification gates." : "Strong enough to inspect, not yet certification-eligible."}
+                </p>
+              </li>
+            </ul>
+          </Panel>
+          <div className="sf-stack">
+            <div className="sf-contract-card">
+              <div className="sf-kicker">Trigger Surface</div>
+              <h3>When this skill should activate</h3>
+              <ul>
+                {skill.triggers.map((trigger) => (
+                  <li key={trigger}>{trigger}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="sf-contract-card">
+              <div className="sf-kicker">Input Contract</div>
+              <h3>What the skill expects</h3>
+              <ul>
+                {skill.expected_inputs.map((input) => (
+                  <li key={input}>{input}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="sf-contract-card">
+              <div className="sf-kicker">Output Contract</div>
+              <h3>What the skill should return</h3>
+              <ul>
+                {skill.expected_outputs.map((output) => (
+                  <li key={output}>{output}</li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <p className="sf-text-muted">{skill.description}</p>
-        </Panel>
-      </section>
-      <section className="sf-section">
-        <div className="sf-contract-grid">
-          <Panel>
-            <div className="sf-kicker">Trigger Surface</div>
-            <h2>When this skill should activate</h2>
-            <ul>
-              {skill.triggers.map((trigger) => (
-                <li key={trigger}>{trigger}</li>
-              ))}
-            </ul>
-          </Panel>
-          <Panel>
-            <div className="sf-kicker">Input Contract</div>
-            <h2>What the skill expects</h2>
-            <ul>
-              {skill.expected_inputs.map((input) => (
-                <li key={input}>{input}</li>
-              ))}
-            </ul>
-          </Panel>
-          <Panel>
-            <div className="sf-kicker">Output Contract</div>
-            <h2>What the skill should return</h2>
-            <ul>
-              {skill.expected_outputs.map((output) => (
-                <li key={output}>{output}</li>
-              ))}
-            </ul>
-          </Panel>
         </div>
       </section>
       <SkillDetailTabs skill={skill} />

@@ -10,6 +10,16 @@ const tabs = [
   { id: "examples", label: "Examples + Tests" }
 ] as const;
 
+function renderList(items: string[]) {
+  return (
+    <ul className="sf-compare-list">
+      {items.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
+  );
+}
+
 export function CompareView({ skills }: { skills: CatalogSkill[] }) {
   const preferredLeft = skills.find((skill) => skill.slug === "prd-critic")?.slug ?? skills[0]?.slug ?? "";
   const preferredRight =
@@ -30,12 +40,10 @@ export function CompareView({ skills }: { skills: CatalogSkill[] }) {
         <div className="sf-section-copy">
           <div className="sf-kicker">Compare Skills</div>
           <h2>Check whether two skills truly differ.</h2>
-          <p className="sf-note">
-            This view is intentionally basic. It is for comparing metadata, rubric posture, and evidence assets, not for diffing every line of markdown.
-          </p>
+          <p className="sf-note">Side-by-side comparison of contract, quality posture, and evidence shape.</p>
         </div>
       </div>
-      <div className="sf-filter-grid">
+      <div className="sf-form-row">
         <select className="sf-select" value={leftSlug} onChange={(event) => setLeftSlug(event.target.value)}>
           {skills.map((skill) => (
             <option key={skill.slug} value={skill.slug}>
@@ -58,13 +66,13 @@ export function CompareView({ skills }: { skills: CatalogSkill[] }) {
               <Badge label={skill.maturity} tone={skill.maturity as "certified" | "frontier" | "experimental" | "scaffold"} />
               <Badge label={skill.tier} />
               <Badge label={`Score ${skill.score}`} />
+              <Badge label={skill.benchmark_covered ? "benchmark" : "no benchmark"} />
             </div>
             <h3>{skill.name}</h3>
             <p>{skill.summary}</p>
-            <p className="sf-note">
-              {skill.benchmark_covered ? "Benchmark assets present." : "No benchmark assets."}{" "}
-              {skill.certification_eligible ? "Eligible for certification." : "Not certification-eligible."}
-            </p>
+            <div className="sf-badges" style={{ marginTop: 14 }}>
+              <Badge label={skill.certification_eligible ? "certification ready" : "needs review"} />
+            </div>
           </div>
         ))}
       </div>
@@ -82,17 +90,11 @@ export function CompareView({ skills }: { skills: CatalogSkill[] }) {
               { label: "Category", left: left.category, right: right.category },
               { label: "Maturity", left: left.maturity, right: right.maturity },
               { label: "Tier", left: left.tier, right: right.tier },
-              { label: "Summary", left: left.summary, right: right.summary },
-              { label: "Triggers", left: left.triggers.join("; "), right: right.triggers.join("; ") },
-              { label: "Expected inputs", left: left.expected_inputs.join("; "), right: right.expected_inputs.join("; ") },
-              { label: "Expected outputs", left: left.expected_outputs.join("; "), right: right.expected_outputs.join("; ") },
-              { label: "Score", left: left.score, right: right.score },
-              { label: "Benchmark assets", left: left.benchmark_covered ? "yes" : "no", right: right.benchmark_covered ? "yes" : "no" },
-              {
-                label: "Certification eligible",
-                left: left.certification_eligible ? "yes" : "no",
-                right: right.certification_eligible ? "yes" : "no"
-              }
+              { label: "Primary trigger", left: left.triggers[0], right: right.triggers[0] },
+              { label: "Expected inputs", left: renderList(left.expected_inputs.slice(0, 3)), right: renderList(right.expected_inputs.slice(0, 3)) },
+              { label: "Expected outputs", left: renderList(left.expected_outputs.slice(0, 3)), right: renderList(right.expected_outputs.slice(0, 3)) },
+              { label: "Examples / Tests", left: `${left.counts.examples} / ${left.counts.tests}`, right: `${right.counts.examples} / ${right.counts.tests}` },
+              { label: "Score", left: left.score, right: right.score }
             ]}
           />
         </div>

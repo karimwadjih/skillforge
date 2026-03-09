@@ -4,18 +4,12 @@ Skillforge ships real runtime captures and authored example runs. This folder ex
 
 ## Runtime screenshots
 
-Captured from the local docs and studio apps on March 8, 2026.
+Captured from the real local docs and studio apps.
 
-- [`screenshots/docs-home-real.png`](./screenshots/docs-home-real.png)
-- [`screenshots/docs-flagships-real.png`](./screenshots/docs-flagships-real.png)
-- [`screenshots/docs-prd-critic-real.png`](./screenshots/docs-prd-critic-real.png)
-- [`screenshots/docs-repo-onboarding-real.png`](./screenshots/docs-repo-onboarding-real.png)
-- [`screenshots/docs-customer-interview-synthesizer-real.png`](./screenshots/docs-customer-interview-synthesizer-real.png)
-- [`screenshots/studio-home-real.png`](./screenshots/studio-home-real.png)
-- [`screenshots/studio-compare-real.png`](./screenshots/studio-compare-real.png)
-- [`screenshots/studio-prd-critic-real.png`](./screenshots/studio-prd-critic-real.png)
-- [`screenshots/studio-repo-onboarding-real.png`](./screenshots/studio-repo-onboarding-real.png)
-- [`screenshots/studio-customer-interview-synthesizer-real.png`](./screenshots/studio-customer-interview-synthesizer-real.png)
+- [`screenshots/docs-home-final.png`](./screenshots/docs-home-final.png)
+- [`screenshots/docs-prd-critic-final.png`](./screenshots/docs-prd-critic-final.png)
+- [`screenshots/studio-compare-final.png`](./screenshots/studio-compare-final.png)
+- [`screenshots/studio-prd-critic-final.png`](./screenshots/studio-prd-critic-final.png)
 
 ## Launch asset
 

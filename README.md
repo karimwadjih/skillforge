@@ -48,15 +48,15 @@ Featured flagships:
 
 ## Showcase
 
-Runtime screenshots below were captured from the local docs and studio apps on March 8, 2026.
+Runtime screenshots below were captured from the real local docs and studio apps.
 
-![Skillforge docs screenshot](./showcase/screenshots/docs-home-real.png)
-![Skillforge studio screenshot](./showcase/screenshots/studio-home-real.png)
+![Skillforge docs home screenshot](./showcase/screenshots/docs-home-final.png)
+![Skillforge studio compare screenshot](./showcase/screenshots/studio-compare-final.png)
 
-Additional runtime captures:
+Additional launch captures:
 
-- [`docs-flagships-real.png`](./showcase/screenshots/docs-flagships-real.png)
-- [`studio-compare-real.png`](./showcase/screenshots/studio-compare-real.png)
+- [`docs-prd-critic-final.png`](./showcase/screenshots/docs-prd-critic-final.png)
+- [`studio-prd-critic-final.png`](./showcase/screenshots/studio-prd-critic-final.png)
 
 Launch assets:
 
